@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Aligarh Public School & College Gulberg Lahore</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Work+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Custom Logo Preloader -->
+<div id="preloader">
+    <div class="loader-content">
+        <!-- Aapka logo -->
+        <img src="Photos/logo-small.png" alt="AGPS Logo" class="loader-logo">
+        <!-- Optional Loading Spinner Ring -->
+        <div class="loader-spinner"></div>
+    </div>
+</div>
+    <!-- Topbar -->
+    <div class="top-bar py-2 d-none d-lg-block">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div>
+                <i class="fas fa-envelope me-2 text-warning"></i> agps.gulberg@gmail.com
+                <i class="fas fa-phone ms-4 me-2 text-warning"></i> +92-42-35754957 / +92-42-35755065
+                <i class="fas fa-map-marker-alt ms-4 me-2 text-warning"></i> 38-47/C-2, Ghalib Road, Gulberg III, Lahore
+                <a href="apply.html" class="btn btn-warning btn-sm fw-bold text-dark px-3" style="margin-left: 10px;">
+                    <i class="fas fa-paper-plane me-1"></i> Apply Now!
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Fixed Mobile Menu Responsive Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand navbar-brand-logo d-flex align-items-center gap-2" href="javascript:void(0)" onclick="switchTab('home')">
+                <div class="brand-icon">
+                    <img src="Photos/logo-small.png" alt="AGPS-logo" width="50" height="auto">
+                </div>
+                <div>
+                    <div class="brand-title fw-bold text-dark" style="font-size: 16px;">ALIGARH PUBLIC SCHOOL</div>
+                    <div class="brand-subtitle text-secondary" style="font-size: 13px;">& COLLEGE GULBERG LAHORE</div>
+                </div>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    
+                    <!-- Home -->
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold" href="index.html">Home</a>
+                    </li>
+
+                    <!-- About Us Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="about.html" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="background.html">Background</a></li>
+                            <li><a class="dropdown-item" href="aboutTAT.html">About TAT</a></li>
+                            <li><a class="dropdown-item" href="history.html">History</a></li>
+                            <li><a class="dropdown-item" href="president.html">President Message</a></li>
+                            <li><a class="dropdown-item" href="principal.html">Principal Message</a></li>
+                            <li><a class="dropdown-item" href="mission.html">Mission Statement</a></li>
+                            <li><a class="dropdown-item" href="objective.html">Objectives</a></li>
+                            <li><a class="dropdown-item" href="faculty.html">Faculty & Administration</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Academics Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="academics.html" id="academicsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Academics
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="academicsDropdown">
+                            <li><a class="dropdown-item" href="girls.html">Girls Branch</a></li>
+                            <li><a class="dropdown-item" href="boys.html">Boys Branch</a></li>
+                            <li><a class="dropdown-item" href="college.html">College for Women</a></li>
+                            <li><a class="dropdown-item" href="rules.html">Rules & Regulation</a></li>
+                            <li><a class="dropdown-item" href="assessment.html">Learning Assessment</a></li>
+                            <li><a class="dropdown-item" href="comEdu.html">Computer Education</a></li>
+                            <li><a class="dropdown-item" href="parent.html">Parent Teacher Meeting</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Admissions Dropdown (Replaced Campuses) -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="admissions.html" id="admissionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Admissions
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="admissionsDropdown">
+                            <li><a class="dropdown-item" href="admissionProcess.html">Admission Process</a></li>
+                            <li><a class="dropdown-item" href="feeStructure.html">Fee Structure</a></li>
+                            <li><a class="dropdown-item" href="scholarshipFee.html">Scholarship / Fee Concession</a></li>
+                            <li><a class="dropdown-item" href="admissions.html#book-list">Book List</a></li>
+                            <li><a class="dropdown-item" href="withdrawal.html">Withdrawal Process</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Alumni Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="alumni.html" id="alumniDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Alumni
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="alumniDropdown">
+                            <li><a class="dropdown-item" href="testimonial.html">Testimonials</a></li>
+                            <li><a class="dropdown-item" href="feedback.html">Feedback</a></li>
+                        </ul>
+                    </li>
+
+<!-- Facilities Dropdown -->
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle fw-semibold" href="facilities.html" id="facilitiesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Facilities
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="facilitiesDropdown">
+        
+        <!-- Computer Lab (Hover hone par aage list open hogi) -->
+        <li class="dropdown-submenu">
+            <a class="dropdown-item" href="facilities.html#computer-labs">Computer Lab</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="junior.html">Junior Computer Lab</a></li>
+                <li><a class="dropdown-item" href="senior-girls-lab.html">Sr. Girls Lab</a></li>
+                <li><a class="dropdown-item" href="sr-boys-lab.html">Sr. Boys Branch Lab</a></li>
+            </ul>
+        </li>
+
+        <!-- Baaki Facilities Items -->
+        <li><a class="dropdown-item" href="chemistry.html">Chemistry Lab</a></li>
+        <li><a class="dropdown-item" href="physics.html">Physics Lab</a></li>
+        <li><a class="dropdown-item" href="biology.html">Bio Lab</a></li>
+    </ul>
+</li>
+
+                    <!-- Events & News Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="events.html" id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Events & News
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+                            <li><a class="dropdown-item" href="events.html#announcements">Announcements</a></li>
+                            <li><a class="dropdown-item" href="events.html#upcoming">Upcoming Events</a></li>
+                            <li><a class="dropdown-item" href="gallery-details.html">Gallery</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Contact Us -->
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+<!-- =========================================
+     HOME PAGE MAIN CONTENT
+     Header and Footer are kept separate
+========================================= -->
+
+<!-- HERO CAROUSEL -->
+<section id="home-hero" class="home-hero-section">
+    <div id="heroCarousel"
+         class="carousel slide carousel-fade hero-carousel"
+         data-bs-ride="carousel"
+         data-bs-interval="5000">
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="Photos/main.jpg" class="d-block w-100" alt="Aligarh Public School Main Building">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <span class="home-hero-label">Tehzibul Akhlaq Trust</span>
+                        <h1>Welcome to Aligarh Public School Gulberg</h1>
+                        <p class="d-none d-md-block">
+                            The mission of Sir Syed Ahmad Khan, Tehzibul Akhlaq Trust was established in 1961 at Lahore by the enlightened, progressive and devoted alumni of Aligarh Muslim University and some other eminent scholars and philanthropists.
+                        </p>
+                        <a href="about.html" class="btn home-btn-gold">Learn More <i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="Photos/academy.JPG" class="d-block w-100" alt="Aligarh Public School Campus">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <span class="home-hero-label">Academic Excellence</span>
+                        <h1>Learning for a Brighter Future</h1>
+                        <p class="d-none d-md-block">
+                            We are duly recognized by the Education Department, Government of the Punjab and affiliated with the Board of Intermediate and Secondary Education, Lahore. Our curriculum at every level is dynamic.
+                        </p>
+                        <a href="academics.html" class="btn home-btn-gold">Explore Academics <i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="Photos/science.JPG" class="d-block w-100" alt="Science and Computer Lab">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <span class="home-hero-label">Modern Facilities</span>
+                        <h1>Advanced Science &amp; Computer Labs</h1>
+                        <p class="d-none d-md-block">
+                            State-of-the-art computer centers, science labs, and well-stocked libraries.
+                        </p>
+                        <a href="facilities.html" class="btn home-btn-gold">View Facilities <i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="Photos/sports.JPG" class="d-block w-100" alt="School Sports and Activities">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <span class="home-hero-label">Character Building</span>
+                        <h1>Co-Curricular Activities &amp; Sports</h1>
+                        <p class="d-none d-md-block">
+                            Debates, Annual Sports Gala, Melodious Choir, and Science Exhibitions.
+                        </p>
+                        <a href="events.html" class="btn home-btn-gold">Latest Events <i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Previous slide">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Next slide">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</section>
+
+
+<!-- VIRTUAL TOUR AND EDUCATION HIGHLIGHTS -->
+<section id="home-highlights" class="home-section home-highlights-section">
+    <div class="container">
+
+        <div class="home-section-heading">
+            <span class="home-section-eyebrow">DISCOVER AGPS</span>
+            <h2>Explore <span>Life at AGPS</span></h2>
+            <p>Discover our learning environment, educational approach and school community.</p>
+            <div class="home-heading-line"></div>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-4 col-md-6">
+                <article class="home-info-card h-100">
+                    <div class="home-video-wrap">
+                        <video src="Video/virtual tour.mp4" controls muted preload="metadata" playsinline aria-label="Virtual tour of Aligarh Public School"></video>
+                    </div>
+                    <div class="home-info-card-body">
+                        <h3>Take a Virtual Tour</h3>
+                        <p>From basic educational requirements to high-quality infrastructure, the ambiance of our school environment has a strong impact on students’ learning.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <article class="home-info-card h-100">
+                    <div class="home-video-wrap">
+                        <video src="Video/education system.MP4" controls muted preload="metadata" playsinline aria-label="AGPS education system"></video>
+                    </div>
+                    <div class="home-info-card-body">
+                        <h3>AGPS Education System</h3>
+                        <p>The AGPS Education System is the product of the efforts of devoted Trustees and the experience of dedicated educators who have refined and developed it.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <article class="home-info-card h-100">
+                    <div class="home-video-wrap">
+                        <video src="Video/whyagps.MP4" controls muted preload="metadata" playsinline aria-label="Why choose AGPS"></video>
+                    </div>
+                    <div class="home-info-card-body">
+                        <h3>Why AGPS?</h3>
+                        <p>Since its inception in the mid-sixties, Aligarh Public School has upheld its unique standing by producing academically strong and ethically sound individuals.</p>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- LIFE AT AGPS -->
+<section id="life-at-agps" class="home-section life-agps-section">
+    <div class="container">
+
+        <div class="home-section-heading">
+            <span class="home-section-eyebrow">OUR SCHOOL COMMUNITY</span>
+            <h2>Life at <span>AGPS</span></h2>
+            <p>Celebrating achievements, professional development and the talents of our students.</p>
+            <div class="home-heading-line"></div>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-4 col-md-6">
+                <article class="home-life-card h-100">
+                    <div class="home-life-image">
+                        <img src="Photos/academy.JPG" alt="School annual examination results" loading="lazy">
+                        <span class="home-category-tag">Awards &amp; Achievements</span>
+                    </div>
+                    <div class="home-life-body">
+                        <h3>Result Annual Exam</h3>
+                        <p>From basic educational requirements to high-quality infrastructure, our school environment has a strong impact on students’ learning.</p>
+                        <div class="home-card-meta">
+                            <span><i class="fas fa-clock"></i> Oct 1<sup>st</sup>, 2026</span>
+                            <span><i class="fas fa-comment-slash"></i> Comments Disabled</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <article class="home-life-card h-100">
+                    <div class="home-life-image">
+                        <img src="Photos/science.JPG" alt="Professional development workshop" loading="lazy">
+                        <span class="home-category-tag home-tag-gray">Professional Development</span>
+                    </div>
+                    <div class="home-life-body">
+                        <h3>In-House Workshop</h3>
+                        <p>The AGPS Education System reflects the efforts of devoted Trustees and dedicated educators who continue to refine and develop the learning experience.</p>
+                        <div class="home-card-meta">
+                            <span><i class="fas fa-clock"></i> Oct 1<sup>st</sup>, 2026</span>
+                            <span><i class="fas fa-comment-slash"></i> Comments Disabled</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <article class="home-life-card h-100">
+                    <div class="home-life-image">
+                        <img src="Photos/choir.JPG" alt="Aligarh Public School choir" loading="lazy">
+                        <span class="home-category-tag home-tag-green">Melodious Aligarians</span>
+                    </div>
+                    <div class="home-life-body">
+                        <h3>School Choir</h3>
+                        <p>The melodious school choir was formed in 2008 under the keen guidance of the Principal, providing students an opportunity to develop their musical talents.</p>
+                        <div class="home-card-meta">
+                            <span><i class="fas fa-clock"></i> Oct 1<sup>st</sup>, 2026</span>
+                            <span><i class="fas fa-comment-slash"></i> Comments Disabled</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- NUMBERS SAY IT ALL -->
+<section id="school-statistics" class="home-statistics-section">
+    <div class="container">
+
+        <div class="home-section-heading home-statistics-heading">
+            <span class="home-section-eyebrow">AGPS AT A GLANCE</span>
+            <h2>The <span>Numbers</span> Say It All</h2>
+            <p>A snapshot of our school community and academic journey.</p>
+            <div class="home-heading-line"></div>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+
+            <div class="col-lg-4 col-md-6">
+                <div class="home-stat-card">
+                    <div class="home-stat-icon"><i class="fas fa-user-graduate"></i></div>
+                    <div class="home-stat-number">
+                        <span class="counter" data-target="2000" data-suffix="+" style="color: white;">0</span>
+                    </div>
+                    <h3>Students</h3>
+                    <p>A growing learning community</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="home-stat-card">
+                    <div class="home-stat-icon"><i class="fas fa-trophy"></i></div>
+                    <div class="home-stat-number">
+                        <span class="counter" data-target="10" data-prefix="TOP" style="color: white;" >0</span>
+                    </div>
+                    <h3>Ranked Among</h3>
+                    <p>Lahore Board 2026</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="home-stat-card">
+                    <div class="home-stat-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                    <div class="home-stat-number">
+                        <span class="counter" data-target="110" style="color: white;">0</span>
+                    </div>
+                    <h3>Full-Time Faculty</h3>
+                    <p>Dedicated teaching professionals</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- NEWS & EVENTS -->
+<section id="home-news-events" class="home-section home-news-section">
+    <div class="container">
+
+        <div class="home-section-heading">
+            <span class="home-section-eyebrow">WHAT'S HAPPENING</span>
+            <h2>News &amp; <span>Events</span></h2>
+            <p>Explore school activities, celebrations and student achievements.</p>
+            <div class="home-heading-line"></div>
+        </div>
+
+        <div class="swiper newsSwiper home-news-swiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <article class="home-news-card">
+                        <div class="home-news-image">
+                            <img src="Photos/academy.JPG" alt="Annual examination results" loading="lazy">
+                            <span class="home-category-tag">Extra Curricular</span>
+                        </div>
+                        <div class="home-news-body">
+                            <h3>Result Annual Exam</h3>
+                            <p>From basic educational requirements to high-quality infrastructure, our school environment has a strong impact on students’ learning.</p>
+                            <div class="home-card-meta">
+                                <span><i class="fas fa-clock"></i> Oct 1<sup>st</sup>, 2026</span>
+                                <span><i class="fas fa-comment-slash"></i> Comments Disabled</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="swiper-slide">
+                    <article class="home-news-card">
+                        <div class="home-news-image">
+                            <img src="Girls Branch Sports Day/1.JPG" alt="Girls Branch Sports Day" loading="lazy">
+                            <span class="home-category-tag">Extra Curricular</span>
+                        </div>
+                        <div class="home-news-body">
+                            <h3>Girls Branch Sports Day</h3>
+                            <p>Annual sports events help students build physical endurance, team spirit, and mental resilience through healthy competition.</p>
+                            <div class="home-card-meta">
+                                <span><i class="fas fa-clock"></i> Oct 1<sup>st</sup>, 2026</span>
+                                <span><i class="fas fa-comment-slash"></i> Comments Disabled</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="swiper-slide">
+                    <article class="home-news-card">
+                        <div class="home-news-image">
+                            <img src="Boys Branch Sports Day/1.JPG" alt="Boys Branch Sports Day" loading="lazy">
+                            <span class="home-category-tag">Extra Curricular</span>
+                        </div>
+                        <div class="home-news-body">
+                            <h3>Boys Branch Sports Day</h3>
+                            <p>Annual sports events help students build physical endurance, team spirit, and mental resilience through healthy competition.</p>
+                            <div class="home-card-meta">
+                                <span><i class="fas fa-clock"></i> Oct 1<sup>st</sup>, 2026</span>
+                                <span><i class="fas fa-comment-slash"></i> Comments Disabled</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="swiper-slide">
+                    <article class="home-news-card">
+                        <div class="home-news-image">
+                            <img src="Sir Syed Day Pictures Annual Urdu Play (Selected)/1.JPG" alt="Sir Syed Day event" loading="lazy">
+                            <span class="home-category-tag">Extra Curricular</span>
+                        </div>
+                        <div class="home-news-body">
+                            <h3>Sir Syed Day Event</h3>
+                            <p>Sir Syed Day was celebrated to honour the remarkable contributions of Sir Syed Ahmed Khan to education and social reform.</p>
+                            <div class="home-card-meta">
+                                <span><i class="fas fa-clock"></i> Oct 1<sup>st</sup>, 2026</span>
+                                <span><i class="fas fa-comment-slash"></i> Comments Disabled</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="swiper-slide">
+                    <article class="home-news-card">
+                        <div class="home-news-image">
+                            <img src="Photos/anual play.JPG" alt="Annual English play" loading="lazy">
+                            <span class="home-category-tag">Extra Curricular</span>
+                        </div>
+                        <div class="home-news-body">
+                            <h3>Annual English Play</h3>
+                            <p>The Annual English Play showcased students’ acting skills, creativity, and confidence through an engaging theatrical performance.</p>
+                            <div class="home-card-meta">
+                                <span><i class="fas fa-clock"></i> Oct 1<sup>st</sup>, 2026</span>
+                                <span><i class="fas fa-comment-slash"></i> Comments Disabled</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="swiper-slide">
+                    <article class="home-news-card">
+                        <div class="home-news-image">
+                            <img src="Photos/urdu play.JPG" alt="Annual Urdu play" loading="lazy">
+                            <span class="home-category-tag">Extra Curricular</span>
+                        </div>
+                        <div class="home-news-body">
+                            <h3>Annual Urdu Play</h3>
+                            <p>The Annual Urdu Play showcased students’ acting talent, creativity, and confidence through an engaging theatrical performance.</p>
+                            <div class="home-card-meta">
+                                <span><i class="fas fa-clock"></i> Oct 1<sup>st</sup>, 2026</span>
+                                <span><i class="fas fa-comment-slash"></i> Comments Disabled</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+
+            <div class="home-slider-controls">
+                <button type="button" class="swiper-button-prev-custom home-slider-btn" aria-label="Previous news">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <button type="button" class="swiper-button-next-custom home-slider-btn" aria-label="Next news">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="events.html" class="btn home-btn-outline">View All Events <i class="fas fa-arrow-right ms-2"></i></a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- PHOTO GALLERY -->
+<section id="home-gallery" class="home-section home-gallery-section">
+    <div class="container">
+
+        <div class="home-section-heading">
+            <span class="home-section-eyebrow">MEMORIES &amp; MOMENTS</span>
+            <h2>Photo <span>Gallery</span></h2>
+            <p>A glimpse of activities and learning experiences across our school.</p>
+            <div class="home-heading-line"></div>
+        </div>
+
+        <div class="swiper gallerySwiper home-gallery-swiper">
+            <div class="swiper-wrapper">
+
+                <!-- Girls Sports Day -->
+                <div class="swiper-slide">
+                    <article class="home-gallery-card">
+                        <h3>Sports Day - Girls Branch</h3>
+                        <div class="row g-2 home-gallery-grid">
+                            <div class="col-6"><img src="Girls Branch Sports Day/1.JPG" alt="Girls Sports Day 1" loading="lazy"></div>
+                            <div class="col-6"><img src="Girls Branch Sports Day/2.JPG" alt="Girls Sports Day 2" loading="lazy"></div>
+                            <div class="col-6"><img src="Girls Branch Sports Day/3.JPG" alt="Girls Sports Day 3" loading="lazy"></div>
+                            <div class="col-6"><img src="Girls Branch Sports Day/4.JPG" alt="Girls Sports Day 4" loading="lazy"></div>
+                        </div>
+                        <a href="gallery-details.html#girls-sports" class="btn home-btn-gold home-gallery-link">See More <i class="fas fa-arrow-right ms-1"></i></a>
+                    </article>
+                </div>
+
+                <!-- Boys Sports Day -->
+                <div class="swiper-slide">
+                    <article class="home-gallery-card">
+                        <h3>Sports Day - Boys Branch</h3>
+                        <div class="row g-2 home-gallery-grid">
+                            <div class="col-6"><img src="Boys Branch Sports Day/1.JPG" alt="Boys Sports Day 1" loading="lazy"></div>
+                            <div class="col-6"><img src="Boys Branch Sports Day/2.JPG" alt="Boys Sports Day 2" loading="lazy"></div>
+                            <div class="col-6"><img src="Boys Branch Sports Day/3.JPG" alt="Boys Sports Day 3" loading="lazy"></div>
+                            <div class="col-6"><img src="Boys Branch Sports Day/4.JPG" alt="Boys Sports Day 4" loading="lazy"></div>
+                        </div>
+                        <a href="gallery-details.html#boys-sports" class="btn home-btn-gold home-gallery-link">See More <i class="fas fa-arrow-right ms-1"></i></a>
+                    </article>
+                </div>
+
+                <!-- Sir Syed Day -->
+                <div class="swiper-slide">
+                    <article class="home-gallery-card">
+                        <h3>Sir Syed Day Gallery</h3>
+                        <div class="row g-2 home-gallery-grid">
+                            <div class="col-6"><img src="Sir Syed Day Pictures Annual Urdu Play (Selected)/1.JPG" alt="Sir Syed Day 1" loading="lazy"></div>
+                            <div class="col-6"><img src="Sir Syed Day Pictures Annual Urdu Play (Selected)/2.JPG" alt="Sir Syed Day 2" loading="lazy"></div>
+                            <div class="col-6"><img src="Sir Syed Day Pictures Annual Urdu Play (Selected)/3.JPG" alt="Sir Syed Day 3" loading="lazy"></div>
+                            <div class="col-6"><img src="Sir Syed Day Pictures Annual Urdu Play (Selected)/4.JPG" alt="Sir Syed Day 4" loading="lazy"></div>
+                        </div>
+                        <a href="gallery-details.html#sirsyed-day" class="btn home-btn-gold home-gallery-link">See More <i class="fas fa-arrow-right ms-1"></i></a>
+                    </article>
+                </div>
+
+                <!-- Annual Prize Distribution -->
+                <div class="swiper-slide">
+                    <article class="home-gallery-card">
+                        <h3>Annual Prize Distribution</h3>
+                        <div class="row g-2 home-gallery-grid">
+                            <div class="col-6"><img src="Photos/academic.jpg" alt="Prize Distribution 1" loading="lazy"></div>
+                            <div class="col-6"><img src="Photos/academic.jpg" alt="Prize Distribution 2" loading="lazy"></div>
+                            <div class="col-6"><img src="Photos/academic.jpg" alt="Prize Distribution 3" loading="lazy"></div>
+                            <div class="col-6"><img src="Photos/academic.jpg" alt="Prize Distribution 4" loading="lazy"></div>
+                        </div>
+                        <a href="gallery-details.html#prize-distribution" class="btn home-btn-gold home-gallery-link">See More <i class="fas fa-arrow-right ms-1"></i></a>
+                    </article>
+                </div>
+
+                <!-- KG Wing -->
+                <div class="swiper-slide">
+                    <article class="home-gallery-card">
+                        <h3>Learning With Fun - KG Wing</h3>
+                        <div class="row g-2 home-gallery-grid">
+                            <div class="col-6"><img src="Learning With Fun - KG Wing/1.JPG" alt="KG Wing activity 1" loading="lazy"></div>
+                            <div class="col-6"><img src="Learning With Fun - KG Wing/2.JPG" alt="KG Wing activity 2" loading="lazy"></div>
+                            <div class="col-6"><img src="Learning With Fun - KG Wing/3.JPG" alt="KG Wing activity 3" loading="lazy"></div>
+                            <div class="col-6"><img src="Learning With Fun - KG Wing/4.JPG" alt="KG Wing activity 4" loading="lazy"></div>
+                        </div>
+                        <a href="gallery-details.html#independence-day" class="btn home-btn-gold home-gallery-link">See More <i class="fas fa-arrow-right ms-1"></i></a>
+                    </article>
+                </div>
+
+                <!-- Science Lab -->
+                <div class="swiper-slide">
+                    <article class="home-gallery-card">
+                        <h3>Science Lab</h3>
+                        <div class="row g-2 home-gallery-grid">
+                            <div class="col-6"><img src="Science Labs/1.JPG" alt="Science Lab 1" loading="lazy"></div>
+                            <div class="col-6"><img src="Science Labs/2.JPG" alt="Science Lab 2" loading="lazy"></div>
+                            <div class="col-6"><img src="Science Labs/3.JPG" alt="Science Lab 3" loading="lazy"></div>
+                            <div class="col-6"><img src="Science Labs/4.JPG" alt="Science Lab 4" loading="lazy"></div>
+                        </div>
+                        <a href="gallery-details.html#exhibition" class="btn home-btn-gold home-gallery-link">See More <i class="fas fa-arrow-right ms-1"></i></a>
+                    </article>
+                </div>
+
+            </div>
+
+            <div class="home-slider-controls">
+                <button type="button" class="swiper-button-prev-gallery home-slider-btn" aria-label="Previous gallery">
+                    <i class="fas fa-arrow-left"></i> Previous
+                </button>
+                <button type="button" class="swiper-button-next-gallery home-slider-btn" aria-label="Next gallery">
+                    Next <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="gallery-details.html" class="btn home-btn-outline">Explore Full Gallery <i class="fas fa-images ms-2"></i></a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- OUR MISSION -->
+<section id="home-mission" class="home-mission-section">
+    <div class="home-mission-overlay"></div>
+    <div class="container home-mission-content">
+        <span class="home-section-eyebrow">OUR PURPOSE</span>
+        <h2>Our <span>Mission</span></h2>
+        <div class="home-heading-line"></div>
+        <p>
+            To provide a dynamic and supportive learning environment that empowers students to achieve academic excellence, moral integrity, and leadership qualities. We are dedicated to cultivating curious minds and preparing confident individuals ready to meet global challenges with resilience and creativity.
+        </p>
+        <a href="mission.html" class="btn home-btn-gold">Read Our Mission <i class="fas fa-arrow-right ms-2"></i></a>
+    </div>
+</section>
+
+
+<!-- ADMISSION ANNOUNCEMENT MODAL -->
+<div class="modal fade" id="updateNoticeModal" tabindex="-1" aria-labelledby="updateNoticeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content home-announcement-modal">
+
+            <div class="modal-header home-announcement-header">
+                <h5 class="modal-title fw-bold" id="updateNoticeModalLabel">
+                    <i class="fas fa-bullhorn text-warning me-2"></i>
+                    Latest Announcement &amp; Updates
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body p-4 text-center">
+                <span class="badge bg-danger fs-6 mb-3 px-3 py-2">Admissions Open 2026-2027</span>
+                <h4 class="fw-bold text-dark mb-3">New Academic Session Admissions!</h4>
+
+                <p class="text-muted">
+                    Aligarh Public School &amp; College Gulberg Lahore announces open admissions for
+                    <strong>Playgroup, Primary, Matric, O-Level, and F.Sc</strong> in both Girls and Boys Campuses.
+                </p>
+
+                <div class="home-announcement-details text-start">
+                    <p><i class="fas fa-calendar-alt"></i> <strong>Important Dates:</strong> Application deadline is approaching fast.</p>
+                    <p class="mb-0"><i class="fas fa-award"></i> <strong>Scholarships:</strong> Merit-based fee concessions available for position holders.</p>
+                </div>
+            </div>
+
+            <div class="modal-footer home-announcement-footer">
+                <a href="apply.html" class="btn home-btn-gold">Apply Now</a>
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+ <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <i class="fas fa-university text-warning fs-3"></i>
+                        <h5 class="mb-0 text-white">ALIGARH PUBLIC SCHOOL</h5>
+                    </div>
+                    <p>The mission of Sir Syed Ahmad Khan, Tehzibul Akhlaq Trust was established in 1961 at Lahore by the enlightened, progressive and devoted alumni of Aligarh Muslim University and some other eminent scholars and philanthropists.</p>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="about.html">About AGPS</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="campuses.html">Campuses</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Admissions</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="Document/Admission & Withdrawal.pdf" target="_blank">Criteria & Rules</a></li>
+                        <li><a href="Document/CONCESSIONS IN TUITION FEE.pdf" target="_blank">Fee Concessions</a></li>
+                        <li><a href="apply.html">Apply Online</a></li>
+                        <li><a href="contact.html">Contact Desk</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5>Contact Info</h5>
+                    <p class="small mb-1"><i class="fas fa-map-marker-alt text-warning me-2"></i>38-47/C-2, Ghalib Road, Gulberg III, Lahore</p>
+                    <p class="small mb-1"><i class="fas fa-phone text-warning me-2"></i>042-35754957 / 35755065</p>
+                    <p class="small"><i class="fas fa-envelope text-warning me-2"></i>agps.gulberg@gmail.com</p>
+                </div>
+            </div>
+
+    <footer class="py-4 mt-5" style="border-top: 1px solid white;">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 Aligarh Public School Gulberg, Lahore. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+<!-- IMAGE LIGHTBOX -->
+<div id="imageLightbox" class="home-image-lightbox" onclick="closeLightbox()">
+    <button type="button" class="home-lightbox-close" aria-label="Close image preview" onclick="event.stopPropagation(); closeLightbox();">
+        <i class="fas fa-times"></i>
+    </button>
+    <img id="lightboxImg" src="" alt="Fullscreen View">
+</div>
+
+
+<!-- BACK TO TOP -->
+<button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+     
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

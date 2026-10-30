@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Aligarh Public School</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="preloader">
+    <div class="loader-content">
+        <!-- Aapka logo -->
+        <img src="Photos/logo-small.png" alt="AGPS Logo" class="loader-logo">
+        <!-- Optional Loading Spinner Ring -->
+        <div class="loader-spinner"></div>
+    </div>
+</div>
+    <div class="top-bar py-2 d-none d-lg-block">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div>
+                <i class="fas fa-envelope me-2 text-warning"></i> agps.gulberg@gmail.com
+                <i class="fas fa-phone ms-4 me-2 text-warning"></i> +92-42-35754957 / +92-42-35755065
+                <i class="fas fa-map-marker-alt ms-4 me-2 text-warning"></i> 38-47/C-2, Ghalib Road, Gulberg III, Lahore
+                <a href="javascript:void(0)" onclick="switchTab('apply')" class="btn btn-warning btn-sm fw-bold text-dark px-3" style="margin-left: 10px;">
+                    <i class="fas fa-paper-plane me-1"></i> Apply Now!
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Fixed Mobile Menu Responsive Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand navbar-brand-logo d-flex align-items-center gap-2" href="javascript:void(0)" onclick="switchTab('home')">
+                <div class="brand-icon">
+                    <img src="Photos/logo-small.png" alt="AGPS-logo" width="50" height="auto">
+                </div>
+                <div>
+                    <div class="brand-title fw-bold text-dark" style="font-size: 16px;">ALIGARH PUBLIC SCHOOL</div>
+                    <div class="brand-subtitle text-secondary" style="font-size: 13px;">& COLLEGE GULBERG LAHORE</div>
+                </div>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    
+                    <!-- Home -->
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold" href="index.html">Home</a>
+                    </li>
+
+                    <!-- About Us Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="about.html" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="about.html#background">Background</a></li>
+                            <li><a class="dropdown-item" href="about.html#about-tat">About TAT</a></li>
+                            <li><a class="dropdown-item" href="about.html#history">History</a></li>
+                            <li><a class="dropdown-item" href="about.html#president-message">President Message</a></li>
+                            <li><a class="dropdown-item" href="about.html#principal-message">Principal Message</a></li>
+                            <li><a class="dropdown-item" href="about.html#mission-statement">Mission Statement</a></li>
+                            <li><a class="dropdown-item" href="about.html#objectives">Objectives</a></li>
+                            <li><a class="dropdown-item" href="about.html#faculty">Faculty & Administration</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Academics Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="academics.html" id="academicsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Academics
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="academicsDropdown">
+                            <li><a class="dropdown-item" href="academics.html#girls-branch">Girls Branch</a></li>
+                            <li><a class="dropdown-item" href="academics.html#boys-branch">Boys Branch</a></li>
+                            <li><a class="dropdown-item" href="academics.html#women-college">College for Women</a></li>
+                            <li><a class="dropdown-item" href="academics.html#rules">Rules & Regulation</a></li>
+                            <li><a class="dropdown-item" href="academics.html#learning-assessment">Learning Assessment</a></li>
+                            <li><a class="dropdown-item" href="academics.html#computer-education">Computer Education</a></li>
+                            <li><a class="dropdown-item" href="academics.html#ptm">Parent Teacher Meeting</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Admissions Dropdown (Replaced Campuses) -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="admissions.html" id="admissionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Admissions
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="admissionsDropdown">
+                            <li><a class="dropdown-item" href="admissions.html#process">Admission Process</a></li>
+                            <li><a class="dropdown-item" href="admissions.html#fee-structure">Fee Structure</a></li>
+                            <li><a class="dropdown-item" href="admissions.html#scholarships">Scholarship / Fee Concession</a></li>
+                            <li><a class="dropdown-item" href="admissions.html#book-list">Book List</a></li>
+                            <li><a class="dropdown-item" href="admissions.html#withdrawal">Withdrawal Process</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Alumni Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="alumni.html" id="alumniDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Alumni
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="alumniDropdown">
+                            <li><a class="dropdown-item" href="alumni.html#testimonials">Testimonials</a></li>
+                            <li><a class="dropdown-item" href="alumni.html#feedback">Feedback</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Facilities Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="facilities.html" id="facilitiesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Facilities
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="facilitiesDropdown">
+                            <li><a class="dropdown-item" href="facilities.html#jr-computer-lab">Junior Computer Lab</a></li>
+                            <li><a class="dropdown-item" href="facilities.html#sr-computer-lab">Senior Computer Lab</a></li>
+                            <li><a class="dropdown-item" href="facilities.html#boys-lab">Sr. Boys Branch Lab</a></li>
+                            <li><a class="dropdown-item" href="facilities.html#chemistry-lab">Chemistry Lab</a></li>
+                            <li><a class="dropdown-item" href="facilities.html#physics-lab">Physics Lab</a></li>
+                            <li><a class="dropdown-item" href="facilities.html#bio-lab">Bio Lab</a></li>
+                            <li><a class="dropdown-item" href="facilities.html#medical">Medical Treatment</a></li>
+                            <li><a class="dropdown-item" href="facilities.html#play-area">Play Area PG</a></li>
+                            <li><a class="dropdown-item" href="facilities.html#tuck-shop">Tuck Shop</a></li>
+                            <li><a class="dropdown-item" href="facilities.html#play-ground">Play Ground</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Events & News Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="events.html" id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Events & News
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+                            <li><a class="dropdown-item" href="events.html#announcements">Announcements</a></li>
+                            <li><a class="dropdown-item" href="events.html#upcoming">Upcoming Events</a></li>
+                            <li><a class="dropdown-item" href="events.html#past">Past Events</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Contact Us -->
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <h1 class="text-white fw-bold">About TAT & AGPS</h1>
+            <p class="lead text-light mb-0">Our Roots, History, Sir Syed's Vision & Tehzibul Akhlaq Trust</p>
+        </div>
+    </div>
+    <div class="container py-4">
+        <!-- Our Roots & Sir Syed -->
+        <div class="row g-5  mb-5">
+            <div class="col-lg-7">
+                <h2 class="section-title">Background</h2>
+                <p class="text-muted">
+                    Sir Syed Ahmed Khan a literary genius, an outstanding scholar, an educationist, jurist and
+                    politician—–pioneered modern Education for the Muslim community in India and founded the Aligarh
+                    Muslim University. His work gave rise to a new generation of Muslim intellectuals, politicians and
+                    the Aligarh Movement to secure the political future of Muslims in British India.
+                </p>
+                <p class="text-muted">
+                    In the aftermath of the Indian-Rebellion of 1857, Sir Syed foresaw the imperative need for the
+                    Muslims to acquire proficiency in English language and “Western Sciences” in order to maintain their
+                    social and political clout. His influential booklet “Asbab-e-Baghawat-e-Hind” (The Causes of the
+                    Indian Revolt) had already won him great acclaim. He began to prepare the roadmap for the formation
+                    of a Muslim University by starting various schools. He also started publishing the famous Journal
+                    <strong>“Tehzibul Akhlaq”</strong> in 1870 which generated a great deal of awareness in the Muslims
+                    of the sub-continent. In 1877, Sir Syed founded the Mohammadan Anglo-Oriental (MAO) College in
+                    Aligarh which would become the centre of Muslim intellectual life in India. Over the years, the MAO
+                    College gave rise to a new educated class of Muslims who were politically active in British Raj. The
+                    college which was transformed into a university in 1920 as Aligarh Muslim University, was widely
+                    believed to be “the University that created Pakistan”
+                </p>
+                <h4 class="mt-4 mb-3">Tehzibul Akhlaq Trust</h4>
+                <p class="text-muted">
+                    In furtherance of the mission of Sir Syed Ahmad Khan, Tehzibul Akhlaq Trust was established in 1961
+                    at Lahore by the enlightened, progressive and devoted alumni of Aligarh Muslim University and some
+                    other eminent scholars and philanthropists. The Trust was established in order to:
+                <ul>
+                    <li>Ensure advancement and preservation of the Islamic education and cultural values.</li>
+                    <li>Set up educational institutions on the lines of the Muslim University, Aligarh.</li>
+                </ul>
+                </p>
+            </div>
+            <div class="col-lg-5">
+                <div class="bg-light p-4 rounded-4 border border-2 shadow-sm">
+                    <img style="margin-left: 6.5rem; border-radius: 50%;" src="Photos/Sabri.jpeg" alt="sabri sahab">
+                    <h4 class="text-primary mb-3" style="text-align: center;">
+                        </i>President’s Message</h4>
+                    <p class="text-muted mb-3" style="line-height: 1.8;">
+                        Founded over 50 years ago by dedicated volunteers inspired by Aligarh Muslim University,
+                        Tehzibul Akhlaq Trust provides affordable, high-quality education. The institution has
+                        successfully nurtured over 20,000 alumni and currently serves more than 2,000 active students
+                        across custom-built campuses featuring modern labs, libraries, sports grounds, and hostel
+                        facilities at our Manga Campus.
+                    </p>
+                    <p class="text-muted mb-4" style="line-height: 1.8;">
+                        Beyond academics, we prioritize moral values, character building, and shaping responsible,
+                        patriotic citizens. Driven by continuous progress, we invite you to be part of this noble
+                        educational mission.
+                    </p>
+                    <div>
+                        <h5 class="fw-bold text-dark mb-0">G.A. Sabri</h5>
+                        <small class="text-muted">President, Tehzibul Akhlaq Trust (TAT)</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Historic Milestones Timeline & Principal's Message Section -->
+        <div class="mb-5">
+            <h2 class="section-title mb-4">History</h2>
+            <div class="row g-5">
+                <!-- Left Column: History Content -->
+                <div class="col-lg-7">
+                    <h4>Started in a rented building</h4>
+                    <p class="text-muted">(06<sup>th</sup> Sep 1965 –12<sup>th</sup> Sep 1982) <br> On 6<sup>th</sup>
+                        Sept.
+                        1965, about 75 children entered the premises of Aligarh which was started in a rented building
+                        at
+                        39-B/1, Gulberg-III, Lahore. Unfortunately, this day was quite bleak in the history of Pakistan
+                        as the
+                        war started between India & Pakistan at Wahga Border Lahore. On account of this situation, the
+                        school
+                        remained closed for few days. However, academic activities resumed in the school after the war
+                        ended. At
+                        that time, the Management, staff and support staff helped a lot to carry forward the mission of
+                        Tehzibul
+                        Akhlzq Trust. It was the result of their untiring efforts that the school started growing within
+                        a year.
+                        Therefore, the very next year in 1966, the school was shifted to a comparatively bigger building
+                        at
+                        27-C-I, Gulberg-III. This was a time when Aligarh Public School was the only institute in the
+                        vicinity
+                        in order to cater for the educational needs at K.G. primary, middle and secondary level. In this
+                        way, a
+                        platform was provided to the children in order to show their talents and to discover new facets
+                        of their
+                        personality.</p>
+                    <p>By upholding this maxim that education is the knowledge not of facts but of values, Aligarh
+                        Public School
+                        Gulberg kept on growing with the passage of time. As the years went on, this small building
+                        became
+                        insufficient to fulfill the educational needs of the institute. In view of pressing demand of
+                        time, the
+                        school was shifted to its present premises in 1982.</p>
+
+                    <h4 class="mt-4">Shifted to owned building</h4>
+                    <p class="text-muted">(12<sup>th</sup> 1982 till date) <br> At the threshold of 50th year of the
+                        institute,
+                        turning down the pages of history, it is a matter of great pride for us that from the small
+                        beginning in
+                        a rented building in 1965, the Institute was shifted to its own spacious building in 1982. The
+                        school
+                        building was constructed on a piece of land measuring 14 kanals, 12 marlas, 90 sq.f.t which was
+                        purchased from LDA in 1968.</p>
+                    <p>In view of this progressive approach of TAT in terms of acquisition of land for school building
+                        and its
+                        construction, that too in an era when a few schools, in private sector, had own building has
+                        made it
+                        binding for us to acknowledge this fact</p>
+                    <p>“We would not have been what we are today without the missionary zeal and untiring efforts of our
+                        founding fathers”.</p>
+                    <p>By carrying out the work with the same vigour, enthusiasm, diligence and commitment, we have come
+                        a long
+                        way.</p>
+                    <p>On 12<sup>th</sup> Sept, 1982 studies were formally started in the new custom- built campus.
+                        Maintaining
+                        the pace of quality education, we progressed slowly but steadily and the school was upgraded to
+                        higher
+                        secondary level in 1991. Adjacent to school block, a new purpose built campus for intermediate
+                        classes
+                        for girls was inaugurated in 2006.In the same block, a separate campus for boys – Aligarh Public
+                        High
+                        School for Boys was launched in 2008.</p>
+
+                    <img src="Photos/building.webp" alt="building" class="img-fluid rounded shadow-sm my-3"><br><br>
+
+                    <h4>Inauguration of the New College Building</h4>
+                    <p class="text-muted">A graceful inauguration ceremony was held on 12<sup>th</sup> April 2006 in
+                        which Mr.
+                        Abdur Razak Dawood, ex-Federal Minister, Chairman DESCON and Rector LUMS inaugurated the new
+                        building of
+                        Aligarh College for Women..</p>
+                    <p>The Chief Guest appreciated the custom built campus of the College and services of the Tehzibul
+                        Akhlaq
+                        Trust in providing quality education to the girls:</p>
+
+                    <h4 class="mt-4">Establishment of Aligarh Public High School for Boys- Sr Wing</h4>
+                    <p class="text-muted">In 2008 Aligarh Public High School for Boys was established in an entirely
+                        separate
+                        campus at Gulberg which of course, is a starring addition in the educational institutes working
+                        under
+                        the auspices of Tehzibul Akhlaq Trust. At boys school, boys are provided with opportunities to
+                        grow and
+                        develop according to their own aptitudes and abilities. For this purpose one-on-one counseling &
+                        guidance is provided to the students as & when required.</p>
+                </div>
+
+                <!-- Right Column: Principal's Message -->
+                <div class="col-lg-5">
+                    <div class="bg-light p-4 rounded-4 border border-2 shadow-sm sticky-top"
+                        style="top: 90px; z-index: -1;">
+                        <img style="margin-left: 2.5rem;" src="Photos/pricipal.webp" alt="principal" width="300px"
+                            height="auto">
+                        <h4 class="text-primary mb-3 text-center">Principal’s Message</h4>
+                        <p class="text-muted mb-3" style="line-height: 1.8;">
+                            Welcome to Aligarh Public School Gulberg. We offer quality Higher Secondary education for
+                            girls and Secondary education for boys across separate campuses, providing a supportive
+                            environment where every student is valued.
+                        </p>
+                        <p class="text-muted mb-4" style="line-height: 1.8;">
+                            Our holistic approach balances academic excellence with creative, athletic, and moral
+                            development. Grounded in tolerance, respect, and social responsibility, we prepare confident
+                            graduates ready for independent life and meaningful contributions to society.
+                        </p>
+                        <div>
+                            <h5 class="fw-bold text-dark mb-0">Principal</h5>
+                            <small class="text-muted">Aligarh Public School & College, Gulberg-III Lahore</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mission Statment & Objective -->
+        <div class="mb-5">
+
+            <h2 class="section-title">Our mission is</h2>
+            <ul type="square">
+                <li>To develop the inherent potential and talent of the students by educating them in various Modern Disciplines.</li>
+                <li>To give students confidence in their own cultural identity.</li>
+                <li>To groom their personalities within the framework of Islamic values in order to achieve academic, social and national excellence.</li>
+                <li>To develop their physical skills and instill in them an appreciation of the need of healthy living through participation in sporting and recreational activities.</li>
+                <li>To foster in students the habits of “free inquiry, large-hearted tolerance and pure morality”.</li>
+                <li>To provide high-quality teaching through the recruitment of well-qualified and experienced staff in line with the educational standards set by the Ministry of Education.</li>
+            </ul>
+            <h2 class="section-title">Our Objectives</h2>
+            <ul type="square">
+                <li>To provide quality education at affordable cost.</li>
+                <li>To focus all round development and welfare of the students by assuring good health, social development and character building.</li>
+                <li>To ensure professional growth of the teachers by providing ample opportunities of refreshing their knowledge and acquiring new experiences through different workshops and in-house Training sessions.</li>
+                <li>To achieve these objectives within the framework of national curriculum.</li></ul>
+            <h2 class="section-title">Faculty & Administration</h2>
+                <div><a class="faculty" href="Document/List of Non-Teaching Staff (updated).pdf">List of Faculty Staff</a>
+                <a class="faculty" style="background-color: orange;" href="Document/List of Non-Teaching Staff (updated).pdf">List of Administration Staff</a></div>
+        </div>
+
+    </div>
+
+    </div>
+    </div>
+
+ 
+   <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <i class="fas fa-university text-warning fs-3"></i>
+                        <h5 class="mb-0 text-white">ALIGARH PUBLIC SCHOOL</h5>
+                    </div>
+                    <p>The mission of Sir Syed Ahmad Khan, Tehzibul Akhlaq Trust was established in 1961 at Lahore by the enlightened, progressive and devoted alumni of Aligarh Muslim University and some other eminent scholars and philanthropists.</p>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="about.html">About AGPS</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="campuses.html">Campuses</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Admissions</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="Document/Admission & Withdrawal.pdf" target="_blank">Criteria & Rules</a></li>
+                        <li><a href="Document/CONCESSIONS IN TUITION FEE.pdf" target="_blank">Fee Concessions</a></li>
+                        <li><a href="apply.html">Apply Online</a></li>
+                        <li><a href="contact.html">Contact Desk</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5>Contact Info</h5>
+                    <p class="small mb-1"><i class="fas fa-map-marker-alt text-warning me-2"></i>38-47/C-2, Ghalib Road, Gulberg III, Lahore</p>
+                    <p class="small mb-1"><i class="fas fa-phone text-warning me-2"></i>042-35754957 / 35755065</p>
+                    <p class="small"><i class="fas fa-envelope text-warning me-2"></i>agps.gulberg@gmail.com</p>
+                </div>
+            </div>
+
+    <footer class="py-4 mt-5" style="border-top: 1px solid white;">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 Aligarh Public School Gulberg, Lahore. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

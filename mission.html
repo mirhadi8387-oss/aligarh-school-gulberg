@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Aligarh Public School</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="preloader">
+    <div class="loader-content">
+        <!-- Aapka logo -->
+        <img src="Photos/logo-small.png" alt="AGPS Logo" class="loader-logo">
+        <!-- Optional Loading Spinner Ring -->
+        <div class="loader-spinner"></div>
+    </div>
+</div>
+    <div class="top-bar py-2 d-none d-lg-block">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div>
+                <i class="fas fa-envelope me-2 text-warning"></i> agps.gulberg@gmail.com
+                <i class="fas fa-phone ms-4 me-2 text-warning"></i> +92-42-35754957 / +92-42-35755065
+                <i class="fas fa-map-marker-alt ms-4 me-2 text-warning"></i> 38-47/C-2, Ghalib Road, Gulberg III, Lahore
+                <a href="apply.html" class="btn btn-warning btn-sm fw-bold text-dark px-3" style="margin-left: 10px;">
+                    <i class="fas fa-paper-plane me-1"></i> Apply Now!
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Fixed Mobile Menu Responsive Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand navbar-brand-logo d-flex align-items-center gap-2" href="javascript:void(0)" onclick="switchTab('home')">
+                <div class="brand-icon">
+                    <img src="Photos/logo-small.png" alt="AGPS-logo" width="50" height="auto">
+                </div>
+                <div>
+                    <div class="brand-title fw-bold text-dark" style="font-size: 16px;">ALIGARH PUBLIC SCHOOL</div>
+                    <div class="brand-subtitle text-secondary" style="font-size: 13px;">& COLLEGE GULBERG LAHORE</div>
+                </div>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    
+                    <!-- Home -->
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold" href="index.html">Home</a>
+                    </li>
+
+                    <!-- About Us Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="about.html" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="background.html">Background</a></li>
+                            <li><a class="dropdown-item" href="aboutTAT.html">About TAT</a></li>
+                            <li><a class="dropdown-item" href="history.html">History</a></li>
+                            <li><a class="dropdown-item" href="president.html">President Message</a></li>
+                            <li><a class="dropdown-item" href="principal.html">Principal Message</a></li>
+                            <li><a class="dropdown-item" href="mission.html">Mission Statement</a></li>
+                            <li><a class="dropdown-item" href="objective.html">Objectives</a></li>
+                            <li><a class="dropdown-item" href="faculty.html">Faculty & Administration</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Academics Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="academics.html" id="academicsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Academics
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="academicsDropdown">
+                            <li><a class="dropdown-item" href="girls.html">Girls Branch</a></li>
+                            <li><a class="dropdown-item" href="boys.html">Boys Branch</a></li>
+                            <li><a class="dropdown-item" href="college.html">College for Women</a></li>
+                            <li><a class="dropdown-item" href="rules.html">Rules & Regulation</a></li>
+                            <li><a class="dropdown-item" href="assessment.html">Learning Assessment</a></li>
+                            <li><a class="dropdown-item" href="comEdu.html">Computer Education</a></li>
+                            <li><a class="dropdown-item" href="parent.html">Parent Teacher Meeting</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Admissions Dropdown (Replaced Campuses) -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="admissions.html" id="admissionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Admissions
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="admissionsDropdown">
+                            <li><a class="dropdown-item" href="admissionProcess.html">Admission Process</a></li>
+                            <li><a class="dropdown-item" href="feeStructure.html">Fee Structure</a></li>
+                            <li><a class="dropdown-item" href="scholarshipFee.html">Scholarship / Fee Concession</a></li>
+                            <li><a class="dropdown-item" href="admissions.html#book-list">Book List</a></li>
+                            <li><a class="dropdown-item" href="withdrawal.html">Withdrawal Process</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Alumni Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="alumni.html" id="alumniDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Alumni
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="alumniDropdown">
+                            <li><a class="dropdown-item" href="testimonial.html">Testimonials</a></li>
+                            <li><a class="dropdown-item" href="feedback.html">Feedback</a></li>
+                        </ul>
+                    </li>
+
+<!-- Facilities Dropdown -->
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle fw-semibold" href="facilities.html" id="facilitiesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Facilities
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="facilitiesDropdown">
+        
+        <!-- Computer Lab (Hover hone par aage list open hogi) -->
+        <li class="dropdown-submenu">
+            <a class="dropdown-item" href="facilities.html#computer-labs">Computer Lab</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="junior.html">Junior Computer Lab</a></li>
+                <li><a class="dropdown-item" href="senior-girls-lab.html">Sr. Girls Lab</a></li>
+                <li><a class="dropdown-item" href="sr-boys-lab.html">Sr. Boys Branch Lab</a></li>
+            </ul>
+        </li>
+
+        <!-- Baaki Facilities Items -->
+        <li><a class="dropdown-item" href="chemistry.html">Chemistry Lab</a></li>
+        <li><a class="dropdown-item" href="physics.html">Physics Lab</a></li>
+        <li><a class="dropdown-item" href="biology.html">Bio Lab</a></li>
+    </ul>
+</li>
+
+                    <!-- Events & News Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="events.html" id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Events & News
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+                            <li><a class="dropdown-item" href="events.html#announcements">Announcements</a></li>
+                            <li><a class="dropdown-item" href="events.html#upcoming">Upcoming Events</a></li>
+                            <li><a class="dropdown-item" href="gallery-details.html">Gallery</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Contact Us -->
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- MISSION STATEMENT SECTION -->
+<section id="mission-statement" class="home-section home-mission-section">
+    <div class="container">
+
+        <!-- Section Heading -->
+        <div class="home-section-heading">
+            <span class="home-section-eyebrow">OUR PURPOSE &amp; VALUES</span>
+            <h2>Our <span>Mission</span> Statement</h2>
+            <p>
+                Empowering students for academic, moral, and personal excellence.
+            </p>
+            <div class="home-heading-line"></div>
+        </div>
+
+        <!-- Mission Introduction -->
+        <div class="home-mission-intro">
+            <div class="home-mission-intro-icon">
+                <i class="fas fa-bullseye"></i>
+            </div>
+            <div>
+                <span class="home-mission-label">OUR COMMITMENT</span>
+                <h3>Our Mission Is to Inspire, Educate &amp; Empower</h3>
+                <p>
+                    We strive to nurture confident, responsible, and capable
+                    individuals through quality education and strong moral values.
+                </p>
+            </div>
+        </div>
+
+        <!-- Mission Cards -->
+        <div class="row g-4 home-mission-grid">
+
+            <!-- Mission 01 -->
+            <div class="col-lg-6 col-md-6">
+                <article class="home-mission-card">
+                    <div class="home-mission-card-top">
+                        <span class="home-mission-number">01</span>
+                        <div class="home-mission-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                    </div>
+                    <h3>Developing Potential</h3>
+                    <p>
+                        To develop the inherent potential and talent of the
+                        students by educating them in various
+                        <strong>Modern Disciplines</strong>.
+                    </p>
+                </article>
+            </div>
+
+            <!-- Mission 02 -->
+            <div class="col-lg-6 col-md-6">
+                <article class="home-mission-card">
+                    <div class="home-mission-card-top">
+                        <span class="home-mission-number">02</span>
+                        <div class="home-mission-icon">
+                            <i class="fas fa-landmark"></i>
+                        </div>
+                    </div>
+                    <h3>Cultural Identity</h3>
+                    <p>
+                        To give students confidence in their own
+                        <strong>cultural identity</strong>.
+                    </p>
+                </article>
+            </div>
+
+            <!-- Mission 03 -->
+            <div class="col-lg-6 col-md-6">
+                <article class="home-mission-card">
+                    <div class="home-mission-card-top">
+                        <span class="home-mission-number">03</span>
+                        <div class="home-mission-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                    </div>
+                    <h3>Islamic Values &amp; Character</h3>
+                    <p>
+                        To groom their personalities within the framework of
+                        <strong>Islamic values</strong> in order to achieve
+                        academic, social, and national excellence.
+                    </p>
+                </article>
+            </div>
+
+            <!-- Mission 04 -->
+            <div class="col-lg-6 col-md-6">
+                <article class="home-mission-card">
+                    <div class="home-mission-card-top">
+                        <span class="home-mission-number">04</span>
+                        <div class="home-mission-icon">
+                            <i class="fas fa-running"></i>
+                        </div>
+                    </div>
+                    <h3>Healthy Living</h3>
+                    <p>
+                        To develop their physical skills and instill in them an
+                        appreciation of the need for <strong>healthy living</strong>
+                        through participation in sporting and recreational activities.
+                    </p>
+                </article>
+            </div>
+
+            <!-- Mission 05 -->
+            <div class="col-lg-6 col-md-6">
+                <article class="home-mission-card">
+                    <div class="home-mission-card-top">
+                        <span class="home-mission-number">05</span>
+                        <div class="home-mission-icon">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                    </div>
+                    <h3>Inquiry, Tolerance &amp; Morality</h3>
+                    <p>
+                        To foster in students the habits of
+                        <strong>“free inquiry, large-hearted tolerance,
+                        and pure morality”</strong>.
+                    </p>
+                </article>
+            </div>
+
+            <!-- Mission 06 -->
+            <div class="col-lg-6 col-md-6">
+                <article class="home-mission-card">
+                    <div class="home-mission-card-top">
+                        <span class="home-mission-number">06</span>
+                        <div class="home-mission-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                    </div>
+                    <h3>Quality Education</h3>
+                    <p>
+                        To provide high-quality teaching through the recruitment
+                        of well-qualified and experienced staff in line with the
+                        <strong>educational standards set by the Ministry of Education</strong>.
+                    </p>
+                </article>
+            </div>
+
+        </div>
+
+        <!-- Closing Statement -->
+        <div class="home-mission-footer">
+            <i class="fas fa-graduation-cap"></i>
+            <p>
+                Building knowledge, nurturing character, and preparing students
+                for a brighter future.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+   <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <i class="fas fa-university text-warning fs-3"></i>
+                        <h5 class="mb-0 text-white">ALIGARH PUBLIC SCHOOL</h5>
+                    </div>
+                    <p>The mission of Sir Syed Ahmad Khan, Tehzibul Akhlaq Trust was established in 1961 at Lahore by the enlightened, progressive and devoted alumni of Aligarh Muslim University and some other eminent scholars and philanthropists.</p>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="about.html">About AGPS</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="campuses.html">Campuses</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Admissions</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="Document/Admission & Withdrawal.pdf" target="_blank">Criteria & Rules</a></li>
+                        <li><a href="Document/CONCESSIONS IN TUITION FEE.pdf" target="_blank">Fee Concessions</a></li>
+                        <li><a href="apply.html">Apply Online</a></li>
+                        <li><a href="contact.html">Contact Desk</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5>Contact Info</h5>
+                    <p class="small mb-1"><i class="fas fa-map-marker-alt text-warning me-2"></i>38-47/C-2, Ghalib Road, Gulberg III, Lahore</p>
+                    <p class="small mb-1"><i class="fas fa-phone text-warning me-2"></i>042-35754957 / 35755065</p>
+                    <p class="small"><i class="fas fa-envelope text-warning me-2"></i>agps.gulberg@gmail.com</p>
+                </div>
+            </div>
+
+    <footer class="py-4 mt-5" style="border-top: 1px solid white;">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 Aligarh Public School Gulberg, Lahore. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

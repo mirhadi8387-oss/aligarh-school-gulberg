@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics - Aligarh Public School</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="preloader">
+    <div class="loader-content">
+        <!-- Aapka logo -->
+        <img src="Photos/logo-small.png" alt="AGPS Logo" class="loader-logo">
+        <!-- Optional Loading Spinner Ring -->
+        <div class="loader-spinner"></div>
+    </div>
+</div>
+     <div class="top-bar py-2 d-none d-lg-block">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div>
+                <i class="fas fa-envelope me-2 text-warning"></i> agps.gulberg@gmail.com
+                <i class="fas fa-phone ms-4 me-2 text-warning"></i> +92-42-35754957 / +92-42-35755065
+                <i class="fas fa-map-marker-alt ms-4 me-2 text-warning"></i> 38-47/C-2, Ghalib Road, Gulberg III, Lahore
+                <a href="apply.html" class="btn btn-warning btn-sm fw-bold text-dark px-3" style="margin-left: 10px;">
+                    <i class="fas fa-paper-plane me-1"></i> Apply Now!
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Fixed Mobile Menu Responsive Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand navbar-brand-logo d-flex align-items-center gap-2" href="javascript:void(0)" onclick="switchTab('home')">
+                <div class="brand-icon">
+                    <img src="Photos/logo-small.png" alt="AGPS-logo" width="50" height="auto">
+                </div>
+                <div>
+                    <div class="brand-title fw-bold text-dark" style="font-size: 16px;">ALIGARH PUBLIC SCHOOL</div>
+                    <div class="brand-subtitle text-secondary" style="font-size: 13px;">& COLLEGE GULBERG LAHORE</div>
+                </div>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    
+                    <!-- Home -->
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold" href="index.html">Home</a>
+                    </li>
+
+                    <!-- About Us Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="about.html" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="background.html">Background</a></li>
+                            <li><a class="dropdown-item" href="aboutTAT.html">About TAT</a></li>
+                            <li><a class="dropdown-item" href="history.html">History</a></li>
+                            <li><a class="dropdown-item" href="president.html">President Message</a></li>
+                            <li><a class="dropdown-item" href="principal.html">Principal Message</a></li>
+                            <li><a class="dropdown-item" href="mission.html">Mission Statement</a></li>
+                            <li><a class="dropdown-item" href="objective.html">Objectives</a></li>
+                            <li><a class="dropdown-item" href="faculty.html">Faculty & Administration</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Academics Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="academics.html" id="academicsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Academics
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="academicsDropdown">
+                            <li><a class="dropdown-item" href="girls.html">Girls Branch</a></li>
+                            <li><a class="dropdown-item" href="boys.html">Boys Branch</a></li>
+                            <li><a class="dropdown-item" href="college.html">College for Women</a></li>
+                            <li><a class="dropdown-item" href="rules.html">Rules & Regulation</a></li>
+                            <li><a class="dropdown-item" href="assessment.html">Learning Assessment</a></li>
+                            <li><a class="dropdown-item" href="comEdu.html">Computer Education</a></li>
+                            <li><a class="dropdown-item" href="parent.html">Parent Teacher Meeting</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Admissions Dropdown (Replaced Campuses) -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="admissions.html" id="admissionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Admissions
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="admissionsDropdown">
+                            <li><a class="dropdown-item" href="admissionProcess.html">Admission Process</a></li>
+                            <li><a class="dropdown-item" href="feeStructure.html">Fee Structure</a></li>
+                            <li><a class="dropdown-item" href="scholarshipFee.html">Scholarship / Fee Concession</a></li>
+                            <li><a class="dropdown-item" href="admissions.html#book-list">Book List</a></li>
+                            <li><a class="dropdown-item" href="withdrawal.html">Withdrawal Process</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Alumni Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="alumni.html" id="alumniDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Alumni
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="alumniDropdown">
+                            <li><a class="dropdown-item" href="testimonial.html">Testimonials</a></li>
+                            <li><a class="dropdown-item" href="feedback.html">Feedback</a></li>
+                        </ul>
+                    </li>
+
+<!-- Facilities Dropdown -->
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle fw-semibold" href="facilities.html" id="facilitiesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Facilities
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="facilitiesDropdown">
+        
+        <!-- Computer Lab (Hover hone par aage list open hogi) -->
+        <li class="dropdown-submenu">
+            <a class="dropdown-item" href="facilities.html#computer-labs">Computer Lab</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="junior.html">Junior Computer Lab</a></li>
+                <li><a class="dropdown-item" href="senior-girls-lab.html">Sr. Girls Lab</a></li>
+                <li><a class="dropdown-item" href="sr-boys-lab.html">Sr. Boys Branch Lab</a></li>
+            </ul>
+        </li>
+
+        <!-- Baaki Facilities Items -->
+        <li><a class="dropdown-item" href="chemistry.html">Chemistry Lab</a></li>
+        <li><a class="dropdown-item" href="physics.html">Physics Lab</a></li>
+        <li><a class="dropdown-item" href="biology.html">Bio Lab</a></li>
+    </ul>
+</li>
+
+                    <!-- Events & News Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="events.html" id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Events & News
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+                            <li><a class="dropdown-item" href="events.html#announcements">Announcements</a></li>
+                            <li><a class="dropdown-item" href="events.html#upcoming">Upcoming Events</a></li>
+                            <li><a class="dropdown-item" href="gallery-details.html">Gallery</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Contact Us -->
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- School Fee & Financial Structure Section -->
+<section id="school-fee" class="py-5 bg-white">
+    <div class="container py-4">
+        
+        <!-- Section Header -->
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-8 text-center">
+                <span class="text-success fw-bold text-uppercase tracking-wider fs-7 d-block mb-2">Financial Information</span>
+                <h2 class="fw-bold text-dark display-6 mb-3">Fee Structure & Payment Guidelines</h2>
+                <div class="mx-auto bg-warning rounded" style="width: 50px; height: 3px;"></div>
+                <p class="text-muted mt-3">Academic Session 2025-2026 (Effective from April 01, 2026)</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                
+                <!-- Part 1: Initial Admission Fee & Challan Process -->
+                <div class="mb-5 pb-4 border-bottom">
+                    <div class="d-flex align-items-center mb-3">
+                        <span class="fs-4 fw-bold text-success me-3">01.</span>
+                        <h3 class="fw-bold text-dark mb-0 fs-4">Admission Fee & Initial Payment</h3>
+                    </div>
+                    <p class="text-secondary leading-relaxed ps-4 ms-2 border-start border-2 border-success mb-3">
+                        Parents of successful candidates are required to collect the first fee challan from the Accounts Department of the school. The first fee challan form includes charges for a security deposit (refundable at the time of withdrawal only), admission fee, one month’s fee, and any other applicable charges[cite: 1]. When all the dues are deposited in the authorized banks, the admission procedure gets completed and the child may join the class.
+                    </p>
+                    <p class="text-secondary leading-relaxed ps-4 ms-2 border-start border-2 border-success mb-0">
+                        The school fee is payable for all <strong>twelve calendar months</strong>. The school retains the discretion to review and increase school fees and all other charges with or without any prior written notice.
+                    </p>
+                </div>
+
+                <!-- Part 2: Official Fee Schedule Table (From Scan File) -->
+                <div class="mb-5 pb-4 border-bottom">
+                    <div class="d-flex align-items-center mb-3">
+                        <span class="fs-4 fw-bold text-warning me-3">02.</span>
+                        <h3 class="fw-bold text-dark mb-0 fs-4">Class-wise Monthly Dues & Breakdown (Rs.)</h3>
+                    </div>
+                    <p class="text-muted ps-4 ms-2 fs-7 mb-4">
+                        Detailed monthly tuition and total dues structure across various classes and college groups effective from 01-04-2026:
+                    </p>
+
+                    <!-- Responsive Fee Table -->
+                    <div class="table-responsive ps-4">
+                        <table class="table table-bordered table-striped align-middle text-center fs-7 mb-0">
+                            <thead class="table-success text-white">
+                                <tr>
+                                    <th>Category</th>
+                                    <th>P.G to KG</th>
+                                    <th>Class 1 to 5</th>
+                                    <th>Class 6 to 8</th>
+                                    <th>Class 9 & 10 (Bio / Arts)</th>
+                                    <th>Class 9 & 10 (Comp. Sc.)</th>
+                                    <th>College F.A. / I.Com</th>
+                                    <th>College F.Sc (1st & 2nd Yr)</th>
+                                    <th>College I.C.S</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="fw-bold text-start">Tuition Fee</td>
+                                    <td>6,820</td>
+                                    <td>6,820</td>
+                                    <td>6,820</td>
+                                    <td>7,140</td>
+                                    <td>7,140</td>
+                                    <td>4,080</td>
+                                    <td>4,080</td>
+                                    <td>4,080</td>
+                                </tr>
+                                <tr class="fw-bold table-warning">
+                                    <td class="text-start">Total Dues</td>
+                                    <td>9,290</td>
+                                    <td>9,905</td>
+                                    <td>10,275</td>
+                                    <td>10,030</td>
+                                    <td>11,185</td>
+                                    <td>6,830</td>
+                                    <td>6,830</td>
+                                    <td>7,985</td>
+                                </tr>
+                                <tr>
+                                    <td class="fw-bold text-start">Kinship + 50%</td>
+                                    <td>5,880</td>
+                                    <td>6,495</td>
+                                    <td>6,865</td>
+                                    <td>6,460</td>
+                                    <td>7,615</td>
+                                    <td>4,790</td>
+                                    <td>4,790</td>
+                                    <td>5,945</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Part 3: Other Fee Charges (One-time / Misc) -->
+                <div class="mb-5 pb-4 border-bottom">
+                    <div class="d-flex align-items-center mb-3">
+                        <span class="fs-4 fw-bold text-success me-3">03.</span>
+                        <h3 class="fw-bold text-dark mb-0 fs-4">Additional Charges & Funds</h3>
+                    </div>
+                    
+                    <div class="row g-3 ps-4">
+                        <div class="col-md-6">
+                            <div class="p-3 bg-light rounded border h-100">
+                                <h6 class="fw-bold text-dark mb-1">Admission Test Fee</h6>
+                                <p class="text-secondary fs-7 mb-0">Rs. 700/- (Non-Refundable)</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 bg-light rounded border h-100">
+                                <h6 class="fw-bold text-dark mb-1">Admission Fee</h6>
+                                <p class="text-secondary fs-7 mb-0">Equals to Monthly Tuition fee (Non-Refundable)</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 bg-light rounded border h-100">
+                                <h6 class="fw-bold text-dark mb-1">Security Deposit</h6>
+                                <p class="text-secondary fs-7 mb-0">Equals to full Monthly fee (Tuition + Funds). Refundable within 6 months from leaving, else credited to Tehzibul Akhlaq Trust as donation.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-3 bg-light rounded border h-100">
+                                <h6 class="fw-bold text-dark mb-1">Examination & Annual Magazine</h6>
+                                <p class="text-secondary fs-7 mb-0">Exam Fee: Rs. 700/- per terminal exam. Annual Magazine: Rs. 700/- (As per publication).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Part 4: Important Rules & Bank Guidelines -->
+                <div>
+                    <div class="d-flex align-items-center mb-3">
+                        <span class="fs-4 fw-bold text-warning me-3">04.</span>
+                        <h3 class="fw-bold text-dark mb-0 fs-4">Important Guidelines & Payment Rules</h3>
+                    </div>
+                    
+                    <ul class="text-secondary fs-7 leading-relaxed ps-4 ms-2 border-start border-2 border-warning mb-0">
+                        <li class="mb-2"><strong>Authorized Banks & Due Date:</strong> Last date for receipt of fee direct in Muslim Commercial Bank Ltd. (Liberty Market Branch, Gulberg) and UBL (Main Market) is the <strong>10th day of every month</strong>.</li>
+                        <li class="mb-2"><strong>Late Fine:</strong> Fee paid after the 10th will be received by the bank with a late fee fine of <strong>Rs. 25/- per day up to the 20th day</strong> of the month.</li>
+                        <li class="mb-2"><strong>Default Action:</strong> If fee is not paid till the 20th day of the month, the student's name will be <strong>struck off the School / College rolls</strong>. If re-enrolling after being struck off due to non-payment, a <strong>Default Fee of Rs. 1000/-</strong> will be charged in addition to late fines.</li>
+                        <li class="mb-2"><strong>Duplicate Challan:</strong> Rs. 150/- will be charged for every duplicate fee challan.</li>
+                        <li class="mb-2"><strong>Mid-Term Joiners:</strong> Students joining mid-term without a school leaving certificate will be charged full fee and funds from April 1st.</li>
+                        <li class="mb-2"><strong>Vacation & Seasonal Dues:</strong> Fee for February & March is payable in February. May & June fee is payable in May. July and August fee is payable in their respective months.</li>
+                        <li class="mb-0"><strong>Withdrawal Notice:</strong> One month's notice in advance is required for student withdrawal, otherwise school authorities reserve the right to demand one month's tuition fee and funds in lieu thereof.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+   
+   <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <i class="fas fa-university text-warning fs-3"></i>
+                        <h5 class="mb-0 text-white">ALIGARH PUBLIC SCHOOL</h5>
+                    </div>
+                    <p>The mission of Sir Syed Ahmad Khan, Tehzibul Akhlaq Trust was established in 1961 at Lahore by the enlightened, progressive and devoted alumni of Aligarh Muslim University and some other eminent scholars and philanthropists.</p>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="about.html">About AGPS</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="campuses.html">Campuses</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Admissions</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="Document/Admission & Withdrawal.pdf" target="_blank">Criteria & Rules</a></li>
+                        <li><a href="Document/CONCESSIONS IN TUITION FEE.pdf" target="_blank">Fee Concessions</a></li>
+                        <li><a href="apply.html">Apply Online</a></li>
+                        <li><a href="contact.html">Contact Desk</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5>Contact Info</h5>
+                    <p class="small mb-1"><i class="fas fa-map-marker-alt text-warning me-2"></i>38-47/C-2, Ghalib Road, Gulberg III, Lahore</p>
+                    <p class="small mb-1"><i class="fas fa-phone text-warning me-2"></i>042-35754957 / 35755065</p>
+                    <p class="small"><i class="fas fa-envelope text-warning me-2"></i>agps.gulberg@gmail.com</p>
+                </div>
+            </div>
+
+    <footer class="py-4 mt-5" style="border-top: 1px solid white;">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 Aligarh Public School Gulberg, Lahore. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

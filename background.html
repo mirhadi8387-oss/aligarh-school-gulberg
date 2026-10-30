@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Aligarh Public School</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="preloader">
+    <div class="loader-content">
+        <!-- Aapka logo -->
+        <img src="Photos/logo-small.png" alt="AGPS Logo" class="loader-logo">
+        <!-- Optional Loading Spinner Ring -->
+        <div class="loader-spinner"></div>
+    </div>
+</div>
+ <div class="top-bar py-2 d-none d-lg-block">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div>
+                <i class="fas fa-envelope me-2 text-warning"></i> agps.gulberg@gmail.com
+                <i class="fas fa-phone ms-4 me-2 text-warning"></i> +92-42-35754957 / +92-42-35755065
+                <i class="fas fa-map-marker-alt ms-4 me-2 text-warning"></i> 38-47/C-2, Ghalib Road, Gulberg III, Lahore
+                <a href="apply.html" class="btn btn-warning btn-sm fw-bold text-dark px-3" style="margin-left: 10px;">
+                    <i class="fas fa-paper-plane me-1"></i> Apply Now!
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Fixed Mobile Menu Responsive Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand navbar-brand-logo d-flex align-items-center gap-2" href="javascript:void(0)" onclick="switchTab('home')">
+                <div class="brand-icon">
+                    <img src="Photos/logo-small.png" alt="AGPS-logo" width="50" height="auto">
+                </div>
+                <div>
+                    <div class="brand-title fw-bold text-dark" style="font-size: 16px;">ALIGARH PUBLIC SCHOOL</div>
+                    <div class="brand-subtitle text-secondary" style="font-size: 13px;">& COLLEGE GULBERG LAHORE</div>
+                </div>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    
+                    <!-- Home -->
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold" href="index.html">Home</a>
+                    </li>
+
+                    <!-- About Us Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="about.html" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="background.html">Background</a></li>
+                            <li><a class="dropdown-item" href="aboutTAT.html">About TAT</a></li>
+                            <li><a class="dropdown-item" href="history.html">History</a></li>
+                            <li><a class="dropdown-item" href="president.html">President Message</a></li>
+                            <li><a class="dropdown-item" href="principal.html">Principal Message</a></li>
+                            <li><a class="dropdown-item" href="mission.html">Mission Statement</a></li>
+                            <li><a class="dropdown-item" href="objective.html">Objectives</a></li>
+                            <li><a class="dropdown-item" href="faculty.html">Faculty & Administration</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Academics Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="academics.html" id="academicsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Academics
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="academicsDropdown">
+                            <li><a class="dropdown-item" href="girls.html">Girls Branch</a></li>
+                            <li><a class="dropdown-item" href="boys.html">Boys Branch</a></li>
+                            <li><a class="dropdown-item" href="college.html">College for Women</a></li>
+                            <li><a class="dropdown-item" href="rules.html">Rules & Regulation</a></li>
+                            <li><a class="dropdown-item" href="assessment.html">Learning Assessment</a></li>
+                            <li><a class="dropdown-item" href="comEdu.html">Computer Education</a></li>
+                            <li><a class="dropdown-item" href="parent.html">Parent Teacher Meeting</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Admissions Dropdown (Replaced Campuses) -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="admissions.html" id="admissionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Admissions
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="admissionsDropdown">
+                            <li><a class="dropdown-item" href="admissionProcess.html">Admission Process</a></li>
+                            <li><a class="dropdown-item" href="feeStructure.html">Fee Structure</a></li>
+                            <li><a class="dropdown-item" href="scholarshipFee.html">Scholarship / Fee Concession</a></li>
+                            <li><a class="dropdown-item" href="admissions.html#book-list">Book List</a></li>
+                            <li><a class="dropdown-item" href="withdrawal.html">Withdrawal Process</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Alumni Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="alumni.html" id="alumniDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Alumni
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="alumniDropdown">
+                            <li><a class="dropdown-item" href="testimonial.html">Testimonials</a></li>
+                            <li><a class="dropdown-item" href="feedback.html">Feedback</a></li>
+                        </ul>
+                    </li>
+
+<!-- Facilities Dropdown -->
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle fw-semibold" href="facilities.html" id="facilitiesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Facilities
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="facilitiesDropdown">
+        
+        <!-- Computer Lab (Hover hone par aage list open hogi) -->
+        <li class="dropdown-submenu">
+            <a class="dropdown-item" href="facilities.html#computer-labs">Computer Lab</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="junior.html">Junior Computer Lab</a></li>
+                <li><a class="dropdown-item" href="senior-girls-lab.html">Sr. Girls Lab</a></li>
+                <li><a class="dropdown-item" href="sr-boys-lab.html">Sr. Boys Branch Lab</a></li>
+            </ul>
+        </li>
+
+        <!-- Baaki Facilities Items -->
+        <li><a class="dropdown-item" href="chemistry.html">Chemistry Lab</a></li>
+        <li><a class="dropdown-item" href="physics.html">Physics Lab</a></li>
+        <li><a class="dropdown-item" href="biology.html">Bio Lab</a></li>
+    </ul>
+</li>
+
+                    <!-- Events & News Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="events.html" id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Events & News
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+                            <li><a class="dropdown-item" href="events.html#announcements">Announcements</a></li>
+                            <li><a class="dropdown-item" href="events.html#upcoming">Upcoming Events</a></li>
+                            <li><a class="dropdown-item" href="gallery-details.html">Gallery</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Contact Us -->
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  
+<!-- Background Page Header -->
+<section class="background-hero">
+    <div class="background-hero-pattern"></div>
+
+    <div class="container background-hero-content">
+        <span class="background-eyebrow">
+            <i class="fas fa-landmark me-2"></i>
+            OUR HERITAGE & LEGACY
+        </span>
+
+        <h1>Our Background</h1>
+
+        <div class="background-title-line"></div>
+
+        <p>
+            Tracing the footsteps of Sir Syed Ahmed Khan and the Aligarh Movement
+        </p>
+
+        <div class="background-breadcrumb">
+            <a href="index.html"><i class="fas fa-home me-1"></i> Home</a>
+            <i class="fas fa-chevron-right"></i>
+            <span>Background</span>
+        </div>
+    </div>
+
+    <div class="background-hero-shape background-shape-one"></div>
+    <div class="background-hero-shape background-shape-two"></div>
+</section>
+
+<!-- History / Background Section -->
+<section id="history" class="background-history-section">
+    <div class="container">
+
+        <!-- Section Heading -->
+        <div class="background-section-heading text-center background-reveal">
+            <span class="background-section-label">A LEGACY OF LEARNING</span>
+
+            <h2>The Vision Behind the Aligarh Movement</h2>
+
+            <div class="background-heading-line"></div>
+
+            <p>
+                A journey of educational awakening, intellectual growth and progress.
+            </p>
+        </div>
+
+        <!-- Main History Card -->
+        <div class="background-main-card background-reveal">
+
+            <div class="background-intro">
+                <div class="background-intro-icon">
+                    <i class="fas fa-book-open"></i>
+                </div>
+
+                <div>
+                    <span class="background-small-label">THE FOUNDER'S VISION</span>
+
+                    <h3>Sir Syed Ahmed Khan</h3>
+
+                    <p class="background-lead">
+                        <strong>Sir Syed Ahmed Khan</strong>—a literary genius,
+                        an outstanding scholar, an educationist, jurist and politician—
+                        pioneered modern education for the Muslim community in India
+                        and founded the Aligarh Muslim University. His work gave rise
+                        to a new generation of Muslim intellectuals, politicians and the
+                        <strong>Aligarh Movement</strong> to secure the political future
+                        of Muslims in British India.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Historical Milestones -->
+            <div class="background-timeline">
+
+                <!-- Milestone 1 -->
+                <article class="background-timeline-item background-reveal">
+                    <div class="background-timeline-marker">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+
+                    <div class="background-milestone-card">
+                        <span class="background-milestone-tag">THE VISION</span>
+
+                        <h4>The Vision (Post-1857)</h4>
+
+                        <p>
+                            In the aftermath of the Indian Rebellion of 1857,
+                            Sir Syed foresaw the imperative need for Muslims to
+                            acquire proficiency in the English language and
+                            "Western Sciences" to maintain their social and political
+                            clout, backed by his influential booklet
+                            <em>“Asbab-e-Baghawat-e-Hind”</em>.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Milestone 2 -->
+                <article class="background-timeline-item background-reveal">
+                    <div class="background-timeline-marker">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+
+                    <div class="background-milestone-card">
+                        <span class="background-milestone-tag">EDUCATIONAL AWAKENING</span>
+
+                        <h4>Awakening & Institutions</h4>
+
+                        <p>
+                            He started publishing the journal
+                            <em>“Tehzibul Akhlaq”</em> in 1870, founded
+                            <strong>MAO College</strong> in 1877, which was transformed
+                            into Aligarh Muslim University in 1920—widely believed to be
+                            “the University that created Pakistan”.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Closing History Text -->
+            <div class="background-conclusion background-reveal">
+                <div class="background-conclusion-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+
+                <p class="mb-0">
+                    He began to prepare the roadmap for the formation of a Muslim
+                    University by starting various schools. Over the years, the
+                    MAO College gave rise to a new educated class of Muslims who
+                    were politically active in the British Raj.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Closing Banner -->
+        <div class="background-bottom-banner background-reveal">
+            <div class="background-bottom-icon">
+                <i class="fas fa-star"></i>
+            </div>
+
+            <div>
+                <h4>Inspired by a Vision. Guided by Education.</h4>
+                <p class="mb-0">
+                    Preserving the spirit of educational progress and intellectual excellence.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+   <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <i class="fas fa-university text-warning fs-3"></i>
+                        <h5 class="mb-0 text-white">ALIGARH PUBLIC SCHOOL</h5>
+                    </div>
+                    <p>The mission of Sir Syed Ahmad Khan, Tehzibul Akhlaq Trust was established in 1961 at Lahore by the enlightened, progressive and devoted alumni of Aligarh Muslim University and some other eminent scholars and philanthropists.</p>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="about.html">About AGPS</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="campuses.html">Campuses</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Admissions</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="Document/Admission & Withdrawal.pdf" target="_blank">Criteria & Rules</a></li>
+                        <li><a href="Document/CONCESSIONS IN TUITION FEE.pdf" target="_blank">Fee Concessions</a></li>
+                        <li><a href="apply.html">Apply Online</a></li>
+                        <li><a href="contact.html">Contact Desk</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5>Contact Info</h5>
+                    <p class="small mb-1"><i class="fas fa-map-marker-alt text-warning me-2"></i>38-47/C-2, Ghalib Road, Gulberg III, Lahore</p>
+                    <p class="small mb-1"><i class="fas fa-phone text-warning me-2"></i>042-35754957 / 35755065</p>
+                    <p class="small"><i class="fas fa-envelope text-warning me-2"></i>agps.gulberg@gmail.com</p>
+                </div>
+            </div>
+
+    <footer class="py-4 mt-5" style="border-top: 1px solid white;">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 Aligarh Public School Gulberg, Lahore. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

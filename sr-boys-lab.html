@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics - Aligarh Public School</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="preloader">
+    <div class="loader-content">
+        <!-- Aapka logo -->
+        <img src="Photos/logo-small.png" alt="AGPS Logo" class="loader-logo">
+        <!-- Optional Loading Spinner Ring -->
+        <div class="loader-spinner"></div>
+    </div>
+</div>
+     <div class="top-bar py-2 d-none d-lg-block">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div>
+                <i class="fas fa-envelope me-2 text-warning"></i> agps.gulberg@gmail.com
+                <i class="fas fa-phone ms-4 me-2 text-warning"></i> +92-42-35754957 / +92-42-35755065
+                <i class="fas fa-map-marker-alt ms-4 me-2 text-warning"></i> 38-47/C-2, Ghalib Road, Gulberg III, Lahore
+                <a href="apply.html" class="btn btn-warning btn-sm fw-bold text-dark px-3" style="margin-left: 10px;">
+                    <i class="fas fa-paper-plane me-1"></i> Apply Now!
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Fixed Mobile Menu Responsive Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand navbar-brand-logo d-flex align-items-center gap-2" href="javascript:void(0)" onclick="switchTab('home')">
+                <div class="brand-icon">
+                    <img src="Photos/logo-small.png" alt="AGPS-logo" width="50" height="auto">
+                </div>
+                <div>
+                    <div class="brand-title fw-bold text-dark" style="font-size: 16px;">ALIGARH PUBLIC SCHOOL</div>
+                    <div class="brand-subtitle text-secondary" style="font-size: 13px;">& COLLEGE GULBERG LAHORE</div>
+                </div>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    
+                    <!-- Home -->
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold" href="index.html">Home</a>
+                    </li>
+
+                    <!-- About Us Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="about.html" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="background.html">Background</a></li>
+                            <li><a class="dropdown-item" href="aboutTAT.html">About TAT</a></li>
+                            <li><a class="dropdown-item" href="history.html">History</a></li>
+                            <li><a class="dropdown-item" href="president.html">President Message</a></li>
+                            <li><a class="dropdown-item" href="principal.html">Principal Message</a></li>
+                            <li><a class="dropdown-item" href="mission.html">Mission Statement</a></li>
+                            <li><a class="dropdown-item" href="objective.html">Objectives</a></li>
+                            <li><a class="dropdown-item" href="faculty.html">Faculty & Administration</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Academics Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="academics.html" id="academicsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Academics
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="academicsDropdown">
+                            <li><a class="dropdown-item" href="girls.html">Girls Branch</a></li>
+                            <li><a class="dropdown-item" href="boys.html">Boys Branch</a></li>
+                            <li><a class="dropdown-item" href="college.html">College for Women</a></li>
+                            <li><a class="dropdown-item" href="rules.html">Rules & Regulation</a></li>
+                            <li><a class="dropdown-item" href="assessment.html">Learning Assessment</a></li>
+                            <li><a class="dropdown-item" href="comEdu.html">Computer Education</a></li>
+                            <li><a class="dropdown-item" href="parent.html">Parent Teacher Meeting</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Admissions Dropdown (Replaced Campuses) -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="admissions.html" id="admissionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Admissions
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="admissionsDropdown">
+                            <li><a class="dropdown-item" href="admissionProcess.html">Admission Process</a></li>
+                            <li><a class="dropdown-item" href="feeStructure.html">Fee Structure</a></li>
+                            <li><a class="dropdown-item" href="scholarshipFee.html">Scholarship / Fee Concession</a></li>
+                            <li><a class="dropdown-item" href="admissions.html#book-list">Book List</a></li>
+                            <li><a class="dropdown-item" href="withdrawal.html">Withdrawal Process</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Alumni Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="alumni.html" id="alumniDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Alumni
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="alumniDropdown">
+                            <li><a class="dropdown-item" href="testimonial.html">Testimonials</a></li>
+                            <li><a class="dropdown-item" href="feedback.html">Feedback</a></li>
+                        </ul>
+                    </li>
+
+<!-- Facilities Dropdown -->
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle fw-semibold" href="facilities.html" id="facilitiesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Facilities
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="facilitiesDropdown">
+        
+        <!-- Computer Lab (Hover hone par aage list open hogi) -->
+        <li class="dropdown-submenu">
+            <a class="dropdown-item" href="facilities.html#computer-labs">Computer Lab</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="junior.html">Junior Computer Lab</a></li>
+                <li><a class="dropdown-item" href="senior-girls-lab.html">Sr. Girls Lab</a></li>
+                <li><a class="dropdown-item" href="sr-boys-lab.html">Sr. Boys Branch Lab</a></li>
+            </ul>
+        </li>
+
+        <!-- Baaki Facilities Items -->
+        <li><a class="dropdown-item" href="chemistry.html">Chemistry Lab</a></li>
+        <li><a class="dropdown-item" href="physics.html">Physics Lab</a></li>
+        <li><a class="dropdown-item" href="biology.html">Bio Lab</a></li>
+    </ul>
+</li>
+
+                    <!-- Events & News Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="events.html" id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Events & News
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+                            <li><a class="dropdown-item" href="events.html#announcements">Announcements</a></li>
+                            <li><a class="dropdown-item" href="events.html#upcoming">Upcoming Events</a></li>
+                            <li><a class="dropdown-item" href="gallery-details.html">Gallery</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Contact Us -->
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- ================= SENIOR BOYS BRANCH ================= -->
+
+<section id="senior-boys" class="senior-branch">
+
+    <!-- Hero Section -->
+    <div class="senior-hero">
+        <div class="senior-hero-content">
+            <span class="senior-tag">ALIGARH PUBLIC SCHOOL & COLLEGE</span>
+            <h1>Senior Boys Branch</h1>
+            <p>
+                Building Knowledge, Character and Confidence
+            </p>
+            <a href="#senior-intro" class="senior-btn">
+                Explore Our Branch <i class="fas fa-arrow-down"></i>
+            </a>
+        </div>
+
+        <div class="senior-hero-decoration senior-circle-one"></div>
+        <div class="senior-hero-decoration senior-circle-two"></div>
+    </div>
+
+    <!-- Quick Navigation -->
+    <div class="senior-navigation">
+        <a href="#senior-intro">Introduction</a>
+        <a href="#senior-academics">Academics</a>
+        <a href="#senior-environment">Learning Environment</a>
+        <a href="#senior-development">Student Development</a>
+        <a href="#senior-objectives">Our Vision</a>
+    </div>
+
+    <!-- Introduction -->
+    <div class="senior-container" id="senior-intro">
+
+        <div class="senior-section-heading">
+            <span>WELCOME TO OUR CAMPUS</span>
+            <h2>A Place to Learn, Grow and Succeed</h2>
+            <div class="senior-heading-line"></div>
+        </div>
+
+        <div class="senior-intro-card">
+            <div class="senior-intro-icon">
+                <i class="fas fa-school"></i>
+            </div>
+
+            <div class="senior-intro-content">
+                <h3>About Senior Boys Branch</h3>
+
+                <p>
+                    The Senior Boys Branch of Aligarh Public School & College
+                    is dedicated to providing students with a supportive,
+                    disciplined and academically focused learning environment.
+                    We aim to prepare students for higher education and the
+                    challenges of an evolving world.
+                </p>
+
+                <p>
+                    Our approach focuses on academic excellence, personal
+                    responsibility, confidence and character building.
+                    Through effective teaching, guidance and meaningful
+                    learning experiences, we encourage students to recognize
+                    their potential and strive for continuous improvement.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Academics -->
+    <div class="senior-academics-section" id="senior-academics">
+        <div class="senior-container">
+
+            <div class="senior-section-heading">
+                <span>ACADEMIC EXCELLENCE</span>
+                <h2>Focused on Quality Education</h2>
+                <div class="senior-heading-line"></div>
+                <p>
+                    Encouraging intellectual growth through structured
+                    learning and academic guidance.
+                </p>
+            </div>
+
+            <div class="senior-card-grid">
+
+                <div class="senior-feature-card">
+                    <div class="senior-feature-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Quality Education</h3>
+                    <p>
+                        Providing meaningful learning experiences that
+                        strengthen subject knowledge and understanding.
+                    </p>
+                </div>
+
+                <div class="senior-feature-card">
+                    <div class="senior-feature-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Dedicated Teaching</h3>
+                    <p>
+                        Encouraging students through effective teaching,
+                        academic support and continuous guidance.
+                    </p>
+                </div>
+
+                <div class="senior-feature-card">
+                    <div class="senior-feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Higher Education Preparation</h3>
+                    <p>
+                        Developing the knowledge, skills and confidence
+                        required for future academic opportunities.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Learning Environment -->
+    <div class="senior-container" id="senior-environment">
+
+        <div class="senior-section-heading">
+            <span>OUR LEARNING ENVIRONMENT</span>
+            <h2>Supporting Every Student's Journey</h2>
+            <div class="senior-heading-line"></div>
+        </div>
+
+        <div class="senior-environment-grid">
+
+            <div class="senior-environment-item">
+                <i class="fas fa-users"></i>
+                <div>
+                    <h3>Positive Learning Culture</h3>
+                    <p>
+                        Promoting mutual respect, cooperation and
+                        active participation in classroom learning.
+                    </p>
+                </div>
+            </div>
+
+            <div class="senior-environment-item">
+                <i class="fas fa-user-shield"></i>
+                <div>
+                    <h3>Discipline & Responsibility</h3>
+                    <p>
+                        Encouraging punctuality, good conduct,
+                        responsibility and respect for school values.
+                    </p>
+                </div>
+            </div>
+
+            <div class="senior-environment-item">
+                <i class="fas fa-lightbulb"></i>
+                <div>
+                    <h3>Critical Thinking</h3>
+                    <p>
+                        Developing curiosity, independent thinking
+                        and the ability to approach challenges confidently.
+                    </p>
+                </div>
+            </div>
+
+            <div class="senior-environment-item">
+                <i class="fas fa-handshake"></i>
+                <div>
+                    <h3>Guidance & Support</h3>
+                    <p>
+                        Supporting students in their academic progress
+                        and personal development through guidance.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Student Development -->
+    <div class="senior-development-section" id="senior-development">
+        <div class="senior-container">
+
+            <div class="senior-section-heading">
+                <span>BEYOND THE CLASSROOM</span>
+                <h2>Developing Skills for Life</h2>
+                <div class="senior-heading-line"></div>
+                <p>
+                    Education is not limited to textbooks.
+                    We encourage students to develop abilities that
+                    contribute to their future success.
+                </p>
+            </div>
+
+            <div class="senior-development-grid">
+
+                <div class="senior-development-card">
+                    <i class="fas fa-microphone-alt"></i>
+                    <h3>Communication Skills</h3>
+                    <p>
+                        Building confidence in expressing ideas,
+                        sharing opinions and communicating effectively.
+                    </p>
+                </div>
+
+                <div class="senior-development-card">
+                    <i class="fas fa-running"></i>
+                    <h3>Physical Development</h3>
+                    <p>
+                        Recognizing the importance of physical activity,
+                        teamwork and a healthy lifestyle.
+                    </p>
+                </div>
+
+                <div class="senior-development-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Problem Solving</h3>
+                    <p>
+                        Encouraging analytical thinking, creativity
+                        and practical approaches to everyday challenges.
+                    </p>
+                </div>
+
+                <div class="senior-development-card">
+                    <i class="fas fa-user-tie"></i>
+                    <h3>Leadership & Confidence</h3>
+                    <p>
+                        Helping students develop self-confidence,
+                        initiative and a sense of responsibility.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Objectives -->
+    <div class="senior-container" id="senior-objectives">
+
+        <div class="senior-section-heading">
+            <span>OUR COMMITMENT</span>
+            <h2>Preparing Students for Tomorrow</h2>
+            <div class="senior-heading-line"></div>
+        </div>
+
+        <div class="senior-objectives-card">
+
+            <div class="senior-objectives-content">
+                <h3>Our Educational Vision</h3>
+
+                <p>
+                    We aspire to nurture responsible, knowledgeable and
+                    confident individuals who are prepared to contribute
+                    positively to society.
+                </p>
+
+                <ul>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        Promote academic excellence and lifelong learning.
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        Develop strong moral values and good character.
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        Encourage independent thinking and creativity.
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        Build confidence, discipline and responsibility.
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i>
+                        Prepare students for higher education and future challenges.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="senior-objectives-symbol">
+                <i class="fas fa-award"></i>
+                <h3>Learn Today</h3>
+                <h3>Lead Tomorrow</h3>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Closing Banner -->
+    <div class="senior-closing-banner">
+        <div class="senior-container">
+            <h2>Shaping Minds, Building Futures</h2>
+            <p>
+                At Aligarh Public School & College, we believe that
+                every student has the potential to achieve excellence.
+            </p>
+            <span>ALIGARH PUBLIC SCHOOL & COLLEGE — GULBERG, LAHORE</span>
+        </div>
+    </div>
+
+</section>
+
+<!-- ================= END SENIOR BOYS BRANCH ================= -->
+
+
+
+   
+   <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <i class="fas fa-university text-warning fs-3"></i>
+                        <h5 class="mb-0 text-white">ALIGARH PUBLIC SCHOOL</h5>
+                    </div>
+                    <p>The mission of Sir Syed Ahmad Khan, Tehzibul Akhlaq Trust was established in 1961 at Lahore by the enlightened, progressive and devoted alumni of Aligarh Muslim University and some other eminent scholars and philanthropists.</p>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="about.html">About AGPS</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="campuses.html">Campuses</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Admissions</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="Document/Admission & Withdrawal.pdf" target="_blank">Criteria & Rules</a></li>
+                        <li><a href="Document/CONCESSIONS IN TUITION FEE.pdf" target="_blank">Fee Concessions</a></li>
+                        <li><a href="apply.html">Apply Online</a></li>
+                        <li><a href="contact.html">Contact Desk</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5>Contact Info</h5>
+                    <p class="small mb-1"><i class="fas fa-map-marker-alt text-warning me-2"></i>38-47/C-2, Ghalib Road, Gulberg III, Lahore</p>
+                    <p class="small mb-1"><i class="fas fa-phone text-warning me-2"></i>042-35754957 / 35755065</p>
+                    <p class="small"><i class="fas fa-envelope text-warning me-2"></i>agps.gulberg@gmail.com</p>
+                </div>
+            </div>
+
+    <footer class="py-4 mt-5" style="border-top: 1px solid white;">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 Aligarh Public School Gulberg, Lahore. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

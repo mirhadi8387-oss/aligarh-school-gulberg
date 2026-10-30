@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics - Aligarh Public School</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="preloader">
+    <div class="loader-content">
+        <!-- Aapka logo -->
+        <img src="Photos/logo-small.png" alt="AGPS Logo" class="loader-logo">
+        <!-- Optional Loading Spinner Ring -->
+        <div class="loader-spinner"></div>
+    </div>
+</div>
+    <div class="top-bar py-2 d-none d-lg-block">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div>
+                <i class="fas fa-envelope me-2 text-warning"></i> agps.gulberg@gmail.com
+                <i class="fas fa-phone ms-4 me-2 text-warning"></i> +92-42-35754957 / +92-42-35755065
+                <i class="fas fa-map-marker-alt ms-4 me-2 text-warning"></i> 38-47/C-2, Ghalib Road, Gulberg III, Lahore
+                <a href="apply.html" class="btn btn-warning btn-sm fw-bold text-dark px-3" style="margin-left: 10px;">
+                    <i class="fas fa-paper-plane me-1"></i> Apply Now!
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Fixed Mobile Menu Responsive Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand navbar-brand-logo d-flex align-items-center gap-2" href="javascript:void(0)" onclick="switchTab('home')">
+                <div class="brand-icon">
+                    <img src="Photos/logo-small.png" alt="AGPS-logo" width="50" height="auto">
+                </div>
+                <div>
+                    <div class="brand-title fw-bold text-dark" style="font-size: 16px;">ALIGARH PUBLIC SCHOOL</div>
+                    <div class="brand-subtitle text-secondary" style="font-size: 13px;">& COLLEGE GULBERG LAHORE</div>
+                </div>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    
+                    <!-- Home -->
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold" href="index.html">Home</a>
+                    </li>
+
+                    <!-- About Us Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="about.html" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="background.html">Background</a></li>
+                            <li><a class="dropdown-item" href="aboutTAT.html">About TAT</a></li>
+                            <li><a class="dropdown-item" href="history.html">History</a></li>
+                            <li><a class="dropdown-item" href="president.html">President Message</a></li>
+                            <li><a class="dropdown-item" href="principal.html">Principal Message</a></li>
+                            <li><a class="dropdown-item" href="mission.html">Mission Statement</a></li>
+                            <li><a class="dropdown-item" href="objective.html">Objectives</a></li>
+                            <li><a class="dropdown-item" href="faculty.html">Faculty & Administration</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Academics Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="academics.html" id="academicsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Academics
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="academicsDropdown">
+                            <li><a class="dropdown-item" href="girls.html">Girls Branch</a></li>
+                            <li><a class="dropdown-item" href="boys.html">Boys Branch</a></li>
+                            <li><a class="dropdown-item" href="college.html">College for Women</a></li>
+                            <li><a class="dropdown-item" href="rules.html">Rules & Regulation</a></li>
+                            <li><a class="dropdown-item" href="assessment.html">Learning Assessment</a></li>
+                            <li><a class="dropdown-item" href="comEdu.html">Computer Education</a></li>
+                            <li><a class="dropdown-item" href="parent.html">Parent Teacher Meeting</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Admissions Dropdown (Replaced Campuses) -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="admissions.html" id="admissionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Admissions
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="admissionsDropdown">
+                            <li><a class="dropdown-item" href="admissionProcess.html">Admission Process</a></li>
+                            <li><a class="dropdown-item" href="feeStructure.html">Fee Structure</a></li>
+                            <li><a class="dropdown-item" href="scholarshipFee.html">Scholarship / Fee Concession</a></li>
+                            <li><a class="dropdown-item" href="admissions.html#book-list">Book List</a></li>
+                            <li><a class="dropdown-item" href="withdrawal.html">Withdrawal Process</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Alumni Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="alumni.html" id="alumniDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Alumni
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="alumniDropdown">
+                            <li><a class="dropdown-item" href="testimonial.html">Testimonials</a></li>
+                            <li><a class="dropdown-item" href="feedback.html">Feedback</a></li>
+                        </ul>
+                    </li>
+
+<!-- Facilities Dropdown -->
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle fw-semibold" href="facilities.html" id="facilitiesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Facilities
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="facilitiesDropdown">
+        
+        <!-- Computer Lab (Hover hone par aage list open hogi) -->
+        <li class="dropdown-submenu">
+            <a class="dropdown-item" href="facilities.html#computer-labs">Computer Lab</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="junior.html">Junior Computer Lab</a></li>
+                <li><a class="dropdown-item" href="senior-girls-lab.html">Sr. Girls Lab</a></li>
+                <li><a class="dropdown-item" href="sr-boys-lab.html">Sr. Boys Branch Lab</a></li>
+            </ul>
+        </li>
+
+        <!-- Baaki Facilities Items -->
+        <li><a class="dropdown-item" href="chemistry.html">Chemistry Lab</a></li>
+        <li><a class="dropdown-item" href="physics.html">Physics Lab</a></li>
+        <li><a class="dropdown-item" href="biology.html">Bio Lab</a></li>
+    </ul>
+</li>
+
+                    <!-- Events & News Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="events.html" id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Events & News
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+                            <li><a class="dropdown-item" href="events.html#announcements">Announcements</a></li>
+                            <li><a class="dropdown-item" href="events.html#upcoming">Upcoming Events</a></li>
+                            <li><a class="dropdown-item" href="gallery-details.html">Gallery</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Contact Us -->
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- JUNIOR COMPUTER LAB -->
+<section id="jr-computer-lab">
+
+    <!-- Hero Banner -->
+    <header class="jr-hero">
+        <div class="jr-hero-circle jr-circle-one"></div>
+        <div class="jr-hero-circle jr-circle-two"></div>
+
+        <div class="container jr-hero-content">
+            <div class="jr-eyebrow">
+                <i class="fas fa-desktop"></i>
+                Learning Through Technology
+            </div>
+
+            <h1 class="jr-hero-title">
+                Junior <span>Computer Lab</span>
+            </h1>
+
+            <p class="jr-hero-description">
+                Building digital skills, confidence and curiosity
+                through practical computer education.
+            </p>
+
+            <div class="jr-hero-line"></div>
+        </div>
+    </header>
+
+    <!-- Quick Navigation -->
+    <div class="container jr-navigation">
+        <div class="jr-nav-inner">
+            <a href="#jr-introduction" class="jr-nav-pill">
+                <i class="fas fa-book-open"></i> Introduction
+            </a>
+            <a href="#jr-features" class="jr-nav-pill">
+                <i class="fas fa-laptop"></i> Lab Features
+            </a>
+            <a href="#jr-gallery" class="jr-nav-pill">
+                <i class="fas fa-images"></i> Photo Gallery
+            </a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="jr-main">
+        <div class="container">
+
+            <!-- Introduction -->
+            <div class="jr-intro text-center jr-animate" id="jr-introduction">
+                <span class="jr-kicker">Our Learning Facilities</span>
+                <h2 class="jr-main-title">A Foundation for Digital Learning</h2>
+                <p>
+                    Our Junior Computer Lab introduces students to the
+                    world of technology through guided learning and
+                    practical computer activities.
+                </p>
+            </div>
+
+            <!-- Introduction Card -->
+            <div class="jr-content-card jr-animate">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-7">
+                        <span class="jr-label">
+                            <i class="fas fa-lightbulb me-2"></i>
+                            Learn • Explore • Grow
+                        </span>
+
+                        <h3 class="jr-card-title mt-3">
+                            Developing Essential Computer Skills
+                        </h3>
+
+                        <p>
+                            The Junior Computer Lab provides students with
+                            opportunities to become familiar with computer
+                            systems and develop essential digital skills.
+                        </p>
+
+                        <p class="mb-0">
+                            Through practical activities and guided instruction,
+                            students can build confidence, improve their
+                            understanding of technology and prepare for
+                            further learning in the digital world.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <div class="jr-feature-image">
+                            <img src="Photos/junior-lab-1.JPG"
+                                 alt="Junior Computer Lab at Aligarh Public School"
+                                 loading="lazy">
+                            <span class="jr-image-tag">
+                                <i class="fas fa-graduation-cap me-2"></i>
+                                Learning Environment
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features -->
+            <div class="jr-intro jr-animate" id="jr-features">
+                <span class="jr-kicker">Why It Matters</span>
+                <h2 class="jr-main-title">Learning in Our Computer Lab</h2>
+                <p>
+                    Encouraging students to explore technology and develop
+                    useful skills from an early age.
+                </p>
+            </div>
+
+            <div class="jr-features-grid">
+
+                <article class="jr-feature-card jr-animate">
+                    <div class="jr-feature-icon orange">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Practical Learning</h3>
+                    <p>
+                        Students become familiar with computer systems
+                        through guided practical activities.
+                    </p>
+                </article>
+
+                <article class="jr-feature-card jr-animate">
+                    <div class="jr-feature-icon green">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>Digital Literacy</h3>
+                    <p>
+                        Basic computer education helps students understand
+                        technology and develop digital awareness.
+                    </p>
+                </article>
+
+                <article class="jr-feature-card jr-animate">
+                    <div class="jr-feature-icon orange">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Creative Thinking</h3>
+                    <p>
+                        Technology-based activities can encourage curiosity,
+                        problem-solving and independent thinking.
+                    </p>
+                </article>
+
+                <article class="jr-feature-card jr-animate">
+                    <div class="jr-feature-icon green">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Future Readiness</h3>
+                    <p>
+                        Early exposure to computers provides a foundation
+                        for continued digital learning.
+                    </p>
+                </article>
+
+            </div>
+
+            <!-- Photo Gallery -->
+            <div class="jr-intro jr-gallery-intro jr-animate" id="jr-gallery">
+                <span class="jr-kicker">A Glimpse Inside Our Lab</span>
+                <h2 class="jr-main-title">Explore Our Computer Lab</h2>
+                <p>
+                    A closer look at our computer learning environment
+                    and facilities.
+                </p>
+            </div>
+
+            <div class="jr-gallery-grid">
+
+                <button class="jr-gallery-item jr-animate"
+                        type="button"
+                        data-full="Photos/junior-lab-1.JPG"
+                        data-caption="Junior Computer Lab Overview"
+                        aria-label="View Junior Computer Lab Overview">
+                    <img src="Photos/junior-lab-1.JPG"
+                         alt="Junior Computer Lab overview"
+                         loading="lazy">
+                    <span class="jr-photo-overlay">
+                        <span>Lab Overview</span>
+                        <i class="fas fa-expand"></i>
+                    </span>
+                </button>
+
+                <button class="jr-gallery-item jr-animate"
+                        type="button"
+                        data-full="Photos/junior-lab-2.JPG"
+                        data-caption="Computer Systems"
+                        aria-label="View Computer Systems">
+                    <img src="Photos/junior-lab-2.JPG"
+                         alt="Computer systems in the Junior Lab"
+                         loading="lazy">
+                    <span class="jr-photo-overlay">
+                        <span>Computer Systems</span>
+                        <i class="fas fa-expand"></i>
+                    </span>
+                </button>
+
+                <button class="jr-gallery-item jr-animate"
+                        type="button"
+                        data-full="Photos/junior-lab-3.JPG"
+                        data-caption="Learning Environment"
+                        aria-label="View Learning Environment">
+                    <img src="Photos/junior-lab-3.JPG"
+                         alt="Junior Lab learning environment"
+                         loading="lazy">
+                    <span class="jr-photo-overlay">
+                        <span>Learning Environment</span>
+                        <i class="fas fa-expand"></i>
+                    </span>
+                </button>
+
+                <button class="jr-gallery-item jr-animate"
+                        type="button"
+                        data-full="Photos/junior-lab-4.JPG"
+                        data-caption="Lab Facilities"
+                        aria-label="View Lab Facilities">
+                    <img src="Photos/junior-lab-4.JPG"
+                         alt="Junior Computer Lab facilities"
+                         loading="lazy">
+                    <span class="jr-photo-overlay">
+                        <span>Lab Facilities</span>
+                        <i class="fas fa-expand"></i>
+                    </span>
+                </button>
+
+            </div>
+
+            <!-- Closing Banner -->
+            <div class="jr-closing jr-animate">
+                <div class="jr-closing-icon">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+                <div>
+                    <h3>Learning Today, Preparing for Tomorrow</h3>
+                    <p class="mb-0">
+                        Helping students develop the knowledge and confidence
+                        to grow in a technology-driven world.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Image Lightbox -->
+    <div class="jr-lightbox"
+         id="jr-lightbox"
+         role="dialog"
+         aria-modal="true"
+         aria-label="Computer lab photograph preview"
+         aria-hidden="true">
+
+        <button type="button"
+                class="jr-lightbox-close"
+                aria-label="Close image preview">
+            <i class="fas fa-times"></i>
+        </button>
+
+        <button type="button"
+                class="jr-lightbox-arrow jr-lightbox-prev"
+                aria-label="Previous image">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <figure class="jr-lightbox-content">
+            <img src=""
+                 alt=""
+                 class="jr-lightbox-image">
+            <figcaption class="jr-lightbox-caption"></figcaption>
+        </figure>
+
+        <button type="button"
+                class="jr-lightbox-arrow jr-lightbox-next"
+                aria-label="Next image">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+
+</section>
+<!-- END JUNIOR COMPUTER LAB -->
+
+
+   
+   <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <i class="fas fa-university text-warning fs-3"></i>
+                        <h5 class="mb-0 text-white">ALIGARH PUBLIC SCHOOL</h5>
+                    </div>
+                    <p>The mission of Sir Syed Ahmad Khan, Tehzibul Akhlaq Trust was established in 1961 at Lahore by the enlightened, progressive and devoted alumni of Aligarh Muslim University and some other eminent scholars and philanthropists.</p>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="about.html">About AGPS</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="campuses.html">Campuses</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Admissions</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="Document/Admission & Withdrawal.pdf" target="_blank">Criteria & Rules</a></li>
+                        <li><a href="Document/CONCESSIONS IN TUITION FEE.pdf" target="_blank">Fee Concessions</a></li>
+                        <li><a href="apply.html">Apply Online</a></li>
+                        <li><a href="contact.html">Contact Desk</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5>Contact Info</h5>
+                    <p class="small mb-1"><i class="fas fa-map-marker-alt text-warning me-2"></i>38-47/C-2, Ghalib Road, Gulberg III, Lahore</p>
+                    <p class="small mb-1"><i class="fas fa-phone text-warning me-2"></i>042-35754957 / 35755065</p>
+                    <p class="small"><i class="fas fa-envelope text-warning me-2"></i>agps.gulberg@gmail.com</p>
+                </div>
+            </div>
+
+    <footer class="py-4 mt-5" style="border-top: 1px solid white;">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 Aligarh Public School Gulberg, Lahore. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

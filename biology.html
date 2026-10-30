@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics - Aligarh Public School</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="preloader">
+    <div class="loader-content">
+        <!-- Aapka logo -->
+        <img src="Photos/logo-small.png" alt="AGPS Logo" class="loader-logo">
+        <!-- Optional Loading Spinner Ring -->
+        <div class="loader-spinner"></div>
+    </div>
+</div>
+  <div class="top-bar py-2 d-none d-lg-block">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div>
+                <i class="fas fa-envelope me-2 text-warning"></i> agps.gulberg@gmail.com
+                <i class="fas fa-phone ms-4 me-2 text-warning"></i> +92-42-35754957 / +92-42-35755065
+                <i class="fas fa-map-marker-alt ms-4 me-2 text-warning"></i> 38-47/C-2, Ghalib Road, Gulberg III, Lahore
+                <a href="apply.html" class="btn btn-warning btn-sm fw-bold text-dark px-3" style="margin-left: 10px;">
+                    <i class="fas fa-paper-plane me-1"></i> Apply Now!
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Fixed Mobile Menu Responsive Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand navbar-brand-logo d-flex align-items-center gap-2" href="javascript:void(0)" onclick="switchTab('home')">
+                <div class="brand-icon">
+                    <img src="Photos/logo-small.png" alt="AGPS-logo" width="50" height="auto">
+                </div>
+                <div>
+                    <div class="brand-title fw-bold text-dark" style="font-size: 16px;">ALIGARH PUBLIC SCHOOL</div>
+                    <div class="brand-subtitle text-secondary" style="font-size: 13px;">& COLLEGE GULBERG LAHORE</div>
+                </div>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    
+                    <!-- Home -->
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold" href="index.html">Home</a>
+                    </li>
+
+                    <!-- About Us Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="about.html" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="background.html">Background</a></li>
+                            <li><a class="dropdown-item" href="aboutTAT.html">About TAT</a></li>
+                            <li><a class="dropdown-item" href="history.html">History</a></li>
+                            <li><a class="dropdown-item" href="president.html">President Message</a></li>
+                            <li><a class="dropdown-item" href="principal.html">Principal Message</a></li>
+                            <li><a class="dropdown-item" href="mission.html">Mission Statement</a></li>
+                            <li><a class="dropdown-item" href="objective.html">Objectives</a></li>
+                            <li><a class="dropdown-item" href="faculty.html">Faculty & Administration</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Academics Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="academics.html" id="academicsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Academics
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="academicsDropdown">
+                            <li><a class="dropdown-item" href="girls.html">Girls Branch</a></li>
+                            <li><a class="dropdown-item" href="boys.html">Boys Branch</a></li>
+                            <li><a class="dropdown-item" href="college.html">College for Women</a></li>
+                            <li><a class="dropdown-item" href="rules.html">Rules & Regulation</a></li>
+                            <li><a class="dropdown-item" href="assessment.html">Learning Assessment</a></li>
+                            <li><a class="dropdown-item" href="comEdu.html">Computer Education</a></li>
+                            <li><a class="dropdown-item" href="parent.html">Parent Teacher Meeting</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Admissions Dropdown (Replaced Campuses) -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="admissions.html" id="admissionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Admissions
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="admissionsDropdown">
+                            <li><a class="dropdown-item" href="admissionProcess.html">Admission Process</a></li>
+                            <li><a class="dropdown-item" href="feeStructure.html">Fee Structure</a></li>
+                            <li><a class="dropdown-item" href="scholarshipFee.html">Scholarship / Fee Concession</a></li>
+                            <li><a class="dropdown-item" href="admissions.html#book-list">Book List</a></li>
+                            <li><a class="dropdown-item" href="withdrawal.html">Withdrawal Process</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Alumni Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="alumni.html" id="alumniDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Alumni
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="alumniDropdown">
+                            <li><a class="dropdown-item" href="testimonial.html">Testimonials</a></li>
+                            <li><a class="dropdown-item" href="feedback.html">Feedback</a></li>
+                        </ul>
+                    </li>
+
+<!-- Facilities Dropdown -->
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle fw-semibold" href="facilities.html" id="facilitiesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Facilities
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="facilitiesDropdown">
+        
+        <!-- Computer Lab (Hover hone par aage list open hogi) -->
+        <li class="dropdown-submenu">
+            <a class="dropdown-item" href="facilities.html#computer-labs">Computer Lab</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="junior.html">Junior Computer Lab</a></li>
+                <li><a class="dropdown-item" href="senior-girls-lab.html">Sr. Girls Lab</a></li>
+                <li><a class="dropdown-item" href="sr-boys-lab.html">Sr. Boys Branch Lab</a></li>
+            </ul>
+        </li>
+
+        <!-- Baaki Facilities Items -->
+        <li><a class="dropdown-item" href="chemistry.html">Chemistry Lab</a></li>
+        <li><a class="dropdown-item" href="physics.html">Physics Lab</a></li>
+        <li><a class="dropdown-item" href="biology.html">Bio Lab</a></li>
+    </ul>
+</li>
+
+                    <!-- Events & News Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="events.html" id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Events & News
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+                            <li><a class="dropdown-item" href="events.html#announcements">Announcements</a></li>
+                            <li><a class="dropdown-item" href="events.html#upcoming">Upcoming Events</a></li>
+                            <li><a class="dropdown-item" href="gallery-details.html">Gallery</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Contact Us -->
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- ================= BIOLOGY LAB SECTION ================= -->
+
+<section id="biology-lab" class="biology-section">
+
+    <!-- HERO SECTION -->
+    <div class="biology-hero">
+        <div class="biology-hero-content">
+            <span class="biology-tag">ALIGARH PUBLIC SCHOOL & COLLEGE</span>
+            <h1>Biology Laboratory</h1>
+            <p>
+                Exploring Life, Understanding Nature and Discovering Science
+            </p>
+            <a href="#biology-intro" class="biology-btn">
+                Explore Our Lab <i class="fas fa-arrow-down"></i>
+            </a>
+        </div>
+
+        <div class="biology-circle biology-circle-one"></div>
+        <div class="biology-circle biology-circle-two"></div>
+    </div>
+
+    <!-- QUICK NAVIGATION -->
+    <div class="biology-navigation">
+        <a href="#biology-intro">Introduction</a>
+        <a href="#biology-facilities">Facilities</a>
+        <a href="#biology-learning">Practical Learning</a>
+        <a href="#biology-safety">Lab Safety</a>
+    </div>
+
+    <!-- INTRODUCTION -->
+    <div class="biology-container biology-intro" id="biology-intro">
+
+        <div class="biology-heading">
+            <span>DISCOVER THE WORLD OF LIFE SCIENCES</span>
+            <h2>Learning Biology Through Observation</h2>
+            <div class="biology-line"></div>
+        </div>
+
+        <div class="biology-intro-grid">
+
+            <!-- LEFT CONTENT -->
+            <div class="biology-intro-content">
+
+                <div class="biology-small-tag">
+                    <i class="fas fa-leaf"></i> Our Science Facility
+                </div>
+
+                <h3>About Our Biology Laboratory</h3>
+
+                <p>
+                    The Biology Laboratory at Aligarh Public School & College
+                    provides students with an opportunity to explore the
+                    fascinating world of living organisms through practical
+                    activities, observation and scientific investigation.
+                </p>
+
+                <p>
+                    It supports classroom learning by helping students
+                    understand the structure and functions of living things,
+                    cells, plant and animal tissues, human body systems
+                    and biological processes.
+                </p>
+
+                <p>
+                    Through hands-on learning and microscopic observation,
+                    students develop scientific curiosity, analytical
+                    thinking and a deeper appreciation of life and nature.
+                </p>
+
+                <div class="biology-intro-points">
+                    <div>
+                        <i class="fas fa-check-circle"></i>
+                        Microscopic Observation
+                    </div>
+                    <div>
+                        <i class="fas fa-check-circle"></i>
+                        Study of Living Organisms
+                    </div>
+                    <div>
+                        <i class="fas fa-check-circle"></i>
+                        Practical Biological Learning
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="biology-image-wrapper">
+
+                <div class="biology-image-frame">
+                    <img
+                        src="Science Labs/5.JPG"
+                        alt="Biology Laboratory at Aligarh Public School"
+                        class="biology-main-image"
+                    >
+                </div>
+
+                <div class="biology-image-caption">
+                    <i class="fas fa-microscope"></i>
+                    <div>
+                        <strong>Observe. Explore. Understand.</strong>
+                        <span>Discovering the Science of Life</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- LAB FACILITIES -->
+    <div class="biology-facilities" id="biology-facilities">
+
+        <div class="biology-container">
+
+            <div class="biology-heading">
+                <span>OUR LABORATORY</span>
+                <h2>Exploring Life Through Science</h2>
+                <div class="biology-line"></div>
+                <p>
+                    Practical activities encourage students to investigate
+                    biological structures, processes and the diversity
+                    of living organisms.
+                </p>
+            </div>
+
+            <div class="biology-card-grid">
+
+                <div class="biology-feature-card">
+                    <div class="biology-feature-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>Microscopic Studies</h3>
+                    <p>
+                        Introducing students to microscopic observation
+                        and the study of cells and biological structures.
+                    </p>
+                </div>
+
+                <div class="biology-feature-card">
+                    <div class="biology-feature-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Plant Studies</h3>
+                    <p>
+                        Exploring plant structures, tissues, growth
+                        and the biological processes of plant life.
+                    </p>
+                </div>
+
+                <div class="biology-feature-card">
+                    <div class="biology-feature-icon">
+                        <i class="fas fa-dna"></i>
+                    </div>
+                    <h3>Cell & Tissue Studies</h3>
+                    <p>
+                        Understanding the organization of cells,
+                        tissues and their important functions in living organisms.
+                    </p>
+                </div>
+
+                <div class="biology-feature-card">
+                    <div class="biology-feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Human Biology</h3>
+                    <p>
+                        Learning about the human body, its organ systems
+                        and essential biological functions.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- PRACTICAL LEARNING -->
+    <div class="biology-container biology-learning" id="biology-learning">
+
+        <div class="biology-heading">
+            <span>HANDS-ON EXPERIENCE</span>
+            <h2>Making Biology an Engaging Experience</h2>
+            <div class="biology-line"></div>
+        </div>
+
+        <div class="biology-learning-grid">
+
+            <div class="biology-learning-item">
+                <div class="biology-learning-number">01</div>
+                <div>
+                    <h3>Microscopic Observation</h3>
+                    <p>
+                        Students learn to observe biological structures
+                        and specimens using appropriate laboratory techniques.
+                    </p>
+                </div>
+            </div>
+
+            <div class="biology-learning-item">
+                <div class="biology-learning-number">02</div>
+                <div>
+                    <h3>Study of Specimens</h3>
+                    <p>
+                        Practical observation helps students identify
+                        and understand different biological structures.
+                    </p>
+                </div>
+            </div>
+
+            <div class="biology-learning-item">
+                <div class="biology-learning-number">03</div>
+                <div>
+                    <h3>Scientific Investigation</h3>
+                    <p>
+                        Students develop observation, recording,
+                        comparison and analytical skills through practical work.
+                    </p>
+                </div>
+            </div>
+
+            <div class="biology-learning-item">
+                <div class="biology-learning-number">04</div>
+                <div>
+                    <h3>Understanding Nature</h3>
+                    <p>
+                        Laboratory activities help students appreciate
+                        biodiversity and understand the relationships
+                        between living organisms and their environment.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- LAB SAFETY -->
+    <div class="biology-safety-section" id="biology-safety">
+
+        <div class="biology-container">
+
+            <div class="biology-safety-content">
+
+                <div class="biology-safety-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+
+                <div>
+                    <span>RESPONSIBLE SCIENCE LEARNING</span>
+                    <h2>Laboratory Safety & Responsibility</h2>
+
+                    <p>
+                        Maintaining a clean and safe laboratory environment
+                        is essential for effective biological learning.
+                        Students are encouraged to follow instructions,
+                        handle laboratory materials carefully and maintain
+                        proper hygiene during practical activities.
+                    </p>
+
+                    <div class="biology-safety-points">
+                        <div>
+                            <i class="fas fa-check"></i>
+                            Follow laboratory instructions.
+                        </div>
+                        <div>
+                            <i class="fas fa-check"></i>
+                            Handle specimens and equipment carefully.
+                        </div>
+                        <div>
+                            <i class="fas fa-check"></i>
+                            Maintain cleanliness and personal hygiene.
+                        </div>
+                        <div>
+                            <i class="fas fa-check"></i>
+                            Perform practical work under proper supervision.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- CLOSING BANNER -->
+    <div class="biology-closing">
+        <div class="biology-container">
+            <i class="fas fa-leaf"></i>
+            <h2>Discover the Wonders of Life</h2>
+            <p>
+                Inspiring young minds to explore living organisms,
+                appreciate nature and develop a passion for biological science.
+            </p>
+            <span>ALIGARH PUBLIC SCHOOL & COLLEGE — GULBERG, LAHORE</span>
+        </div>
+    </div>
+
+</section>
+
+<!-- ================= END BIOLOGY LAB SECTION ================= -->
+
+
+
+   
+   <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <i class="fas fa-university text-warning fs-3"></i>
+                        <h5 class="mb-0 text-white">ALIGARH PUBLIC SCHOOL</h5>
+                    </div>
+                    <p>The mission of Sir Syed Ahmad Khan, Tehzibul Akhlaq Trust was established in 1961 at Lahore by the enlightened, progressive and devoted alumni of Aligarh Muslim University and some other eminent scholars and philanthropists.</p>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="about.html">About AGPS</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="campuses.html">Campuses</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Admissions</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="Document/Admission & Withdrawal.pdf" target="_blank">Criteria & Rules</a></li>
+                        <li><a href="Document/CONCESSIONS IN TUITION FEE.pdf" target="_blank">Fee Concessions</a></li>
+                        <li><a href="apply.html">Apply Online</a></li>
+                        <li><a href="contact.html">Contact Desk</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5>Contact Info</h5>
+                    <p class="small mb-1"><i class="fas fa-map-marker-alt text-warning me-2"></i>38-47/C-2, Ghalib Road, Gulberg III, Lahore</p>
+                    <p class="small mb-1"><i class="fas fa-phone text-warning me-2"></i>042-35754957 / 35755065</p>
+                    <p class="small"><i class="fas fa-envelope text-warning me-2"></i>agps.gulberg@gmail.com</p>
+                </div>
+            </div>
+
+    <footer class="py-4 mt-5" style="border-top: 1px solid white;">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 Aligarh Public School Gulberg, Lahore. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

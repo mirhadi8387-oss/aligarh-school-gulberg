@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics - Aligarh Public School</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="preloader">
+    <div class="loader-content">
+        <!-- Aapka logo -->
+        <img src="Photos/logo-small.png" alt="AGPS Logo" class="loader-logo">
+        <!-- Optional Loading Spinner Ring -->
+        <div class="loader-spinner"></div>
+    </div>
+</div>
+    <div class="top-bar py-2 d-none d-lg-block">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div>
+                <i class="fas fa-envelope me-2 text-warning"></i> agps.gulberg@gmail.com
+                <i class="fas fa-phone ms-4 me-2 text-warning"></i> +92-42-35754957 / +92-42-35755065
+                <i class="fas fa-map-marker-alt ms-4 me-2 text-warning"></i> 38-47/C-2, Ghalib Road, Gulberg III, Lahore
+                <a href="apply.html" class="btn btn-warning btn-sm fw-bold text-dark px-3" style="margin-left: 10px;">
+                    <i class="fas fa-paper-plane me-1"></i> Apply Now!
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Fixed Mobile Menu Responsive Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand navbar-brand-logo d-flex align-items-center gap-2" href="javascript:void(0)" onclick="switchTab('home')">
+                <div class="brand-icon">
+                    <img src="Photos/logo-small.png" alt="AGPS-logo" width="50" height="auto">
+                </div>
+                <div>
+                    <div class="brand-title fw-bold text-dark" style="font-size: 16px;">ALIGARH PUBLIC SCHOOL</div>
+                    <div class="brand-subtitle text-secondary" style="font-size: 13px;">& COLLEGE GULBERG LAHORE</div>
+                </div>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    
+                    <!-- Home -->
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold" href="index.html">Home</a>
+                    </li>
+
+                    <!-- About Us Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="about.html" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="background.html">Background</a></li>
+                            <li><a class="dropdown-item" href="aboutTAT.html">About TAT</a></li>
+                            <li><a class="dropdown-item" href="history.html">History</a></li>
+                            <li><a class="dropdown-item" href="president.html">President Message</a></li>
+                            <li><a class="dropdown-item" href="principal.html">Principal Message</a></li>
+                            <li><a class="dropdown-item" href="mission.html">Mission Statement</a></li>
+                            <li><a class="dropdown-item" href="objective.html">Objectives</a></li>
+                            <li><a class="dropdown-item" href="faculty.html">Faculty & Administration</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Academics Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="academics.html" id="academicsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Academics
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="academicsDropdown">
+                            <li><a class="dropdown-item" href="girls.html">Girls Branch</a></li>
+                            <li><a class="dropdown-item" href="boys.html">Boys Branch</a></li>
+                            <li><a class="dropdown-item" href="college.html">College for Women</a></li>
+                            <li><a class="dropdown-item" href="rules.html">Rules & Regulation</a></li>
+                            <li><a class="dropdown-item" href="assessment.html">Learning Assessment</a></li>
+                            <li><a class="dropdown-item" href="comEdu.html">Computer Education</a></li>
+                            <li><a class="dropdown-item" href="parent.html">Parent Teacher Meeting</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Admissions Dropdown (Replaced Campuses) -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="admissions.html" id="admissionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Admissions
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="admissionsDropdown">
+                            <li><a class="dropdown-item" href="admissionProcess.html">Admission Process</a></li>
+                            <li><a class="dropdown-item" href="feeStructure.html">Fee Structure</a></li>
+                            <li><a class="dropdown-item" href="scholarshipFee.html">Scholarship / Fee Concession</a></li>
+                            <li><a class="dropdown-item" href="admissions.html#book-list">Book List</a></li>
+                            <li><a class="dropdown-item" href="withdrawal.html">Withdrawal Process</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Alumni Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="alumni.html" id="alumniDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Alumni
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="alumniDropdown">
+                            <li><a class="dropdown-item" href="testimonial.html">Testimonials</a></li>
+                            <li><a class="dropdown-item" href="feedback.html">Feedback</a></li>
+                        </ul>
+                    </li>
+
+<!-- Facilities Dropdown -->
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle fw-semibold" href="facilities.html" id="facilitiesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Facilities
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="facilitiesDropdown">
+        
+        <!-- Computer Lab (Hover hone par aage list open hogi) -->
+        <li class="dropdown-submenu">
+            <a class="dropdown-item" href="facilities.html#computer-labs">Computer Lab</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="junior.html">Junior Computer Lab</a></li>
+                <li><a class="dropdown-item" href="senior-girls-lab.html">Sr. Girls Lab</a></li>
+                <li><a class="dropdown-item" href="sr-boys-lab.html">Sr. Boys Branch Lab</a></li>
+            </ul>
+        </li>
+
+        <!-- Baaki Facilities Items -->
+        <li><a class="dropdown-item" href="chemistry.html">Chemistry Lab</a></li>
+        <li><a class="dropdown-item" href="physics.html">Physics Lab</a></li>
+        <li><a class="dropdown-item" href="biology.html">Bio Lab</a></li>
+    </ul>
+</li>
+
+                    <!-- Events & News Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="events.html" id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Events & News
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+                            <li><a class="dropdown-item" href="events.html#announcements">Announcements</a></li>
+                            <li><a class="dropdown-item" href="events.html#upcoming">Upcoming Events</a></li>
+                            <li><a class="dropdown-item" href="gallery-details.html">Gallery</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Contact Us -->
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- SENIOR BOYS COMPUTER LAB START -->
+<section id="boys-lab" class="sb-section">
+
+    <!-- HERO SECTION -->
+    <header class="sb-hero">
+        <div class="sb-orb sb-orb-one"></div>
+        <div class="sb-orb sb-orb-two"></div>
+        <div class="sb-grid-pattern"></div>
+
+        <div class="container sb-hero-content">
+            <span class="sb-eyebrow sb-reveal">
+                <i class="fas fa-microchip"></i>
+                Advanced Digital Learning
+            </span>
+
+            <h1 class="sb-hero-title sb-reveal">
+                Senior Boys
+                <span>Computer Lab</span>
+            </h1>
+
+            <p class="sb-hero-description sb-reveal">
+                Empowering students with practical computer knowledge,
+                digital skills and technological understanding for
+                a rapidly evolving world.
+            </p>
+
+            <div class="sb-hero-line"></div>
+
+            <div class="sb-hero-tags sb-reveal">
+                <span><i class="fas fa-desktop"></i> Technology</span>
+                <span><i class="fas fa-code"></i> Digital Skills</span>
+                <span><i class="fas fa-graduation-cap"></i> Learning</span>
+            </div>
+        </div>
+
+        <div class="sb-scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <!-- QUICK NAVIGATION -->
+    <div class="container sb-navigation">
+        <div class="sb-nav-inner">
+            <a href="#sb-introduction" class="sb-nav-pill">
+                <i class="fas fa-book-open"></i> Introduction
+            </a>
+
+            <a href="#sb-features" class="sb-nav-pill">
+                <i class="fas fa-laptop-code"></i> Lab Features
+            </a>
+
+            <a href="#sb-learning" class="sb-nav-pill">
+                <i class="fas fa-lightbulb"></i> Learning Areas
+            </a>
+
+            <a href="#sb-objectives" class="sb-nav-pill">
+                <i class="fas fa-bullseye"></i> Objectives
+            </a>
+        </div>
+    </div>
+
+    <div class="sb-main">
+        <div class="container">
+
+            <!-- INTRODUCTION -->
+            <div class="sb-intro sb-reveal" id="sb-introduction">
+                <span class="sb-kicker">Our Educational Facilities</span>
+
+                <h2 class="sb-main-title">
+                    Technology Meets
+                    <span>Education</span>
+                </h2>
+
+                <p>
+                    Our Senior Boys Computer Lab provides students with
+                    opportunities to explore the world of information
+                    technology and strengthen their understanding of
+                    computers through practical learning.
+                </p>
+            </div>
+
+            <!-- INTRODUCTION CARD -->
+            <div class="sb-intro-card sb-reveal">
+                <div class="sb-card-number">01</div>
+
+                <div class="sb-card-icon">
+                    <i class="fas fa-desktop"></i>
+                </div>
+
+                <span class="sb-label">Learn • Practice • Progress</span>
+
+                <h3>A Space for Digital Excellence</h3>
+
+                <p>
+                    The Senior Boys Computer Lab supports students in
+                    developing their computer knowledge and practical
+                    understanding of modern technology.
+                </p>
+
+                <p>
+                    Through structured lessons and hands-on activities,
+                    students are encouraged to explore computer applications,
+                    understand digital concepts and improve their
+                    problem-solving abilities.
+                </p>
+
+                <p class="mb-0">
+                    Our aim is to provide a learning environment where
+                    technology becomes an effective tool for academic
+                    growth, creativity and future opportunities.
+                </p>
+            </div>
+
+            <!-- FEATURES -->
+            <div class="sb-intro sb-reveal" id="sb-features">
+                <span class="sb-kicker">Learning Environment</span>
+
+                <h2 class="sb-main-title">
+                    What Makes Our Lab
+                    <span>Special?</span>
+                </h2>
+
+                <p>
+                    Encouraging students to develop essential technological
+                    knowledge through an engaging learning environment.
+                </p>
+            </div>
+
+            <div class="sb-features-grid">
+
+                <article class="sb-feature-card sb-reveal">
+                    <div class="sb-feature-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <span class="sb-feature-index">01</span>
+                    <h3>Practical Computer Education</h3>
+                    <p>
+                        Providing opportunities to understand computer
+                        systems and strengthen practical knowledge
+                        through guided activities.
+                    </p>
+                </article>
+
+                <article class="sb-feature-card sb-reveal">
+                    <div class="sb-feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <span class="sb-feature-index">02</span>
+                    <h3>Technical Understanding</h3>
+                    <p>
+                        Introducing students to important computer
+                        concepts and developing their understanding
+                        of digital technologies.
+                    </p>
+                </article>
+
+                <article class="sb-feature-card sb-reveal">
+                    <div class="sb-feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <span class="sb-feature-index">03</span>
+                    <h3>Problem-Solving Skills</h3>
+                    <p>
+                        Encouraging logical thinking, creativity
+                        and the ability to approach challenges
+                        with confidence.
+                    </p>
+                </article>
+
+                <article class="sb-feature-card sb-reveal">
+                    <div class="sb-feature-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <span class="sb-feature-index">04</span>
+                    <h3>Digital Awareness</h3>
+                    <p>
+                        Developing awareness of the digital world
+                        and helping students understand the
+                        importance of technology in everyday life.
+                    </p>
+                </article>
+
+            </div>
+
+            <!-- LEARNING AREAS -->
+            <div class="sb-learning-section sb-reveal" id="sb-learning">
+
+                <div class="sb-learning-heading">
+                    <span class="sb-kicker">Beyond The Classroom</span>
+
+                    <h2 class="sb-main-title">
+                        Building Essential
+                        <span>Digital Skills</span>
+                    </h2>
+
+                    <p>
+                        Preparing students to understand, explore
+                        and use technology effectively.
+                    </p>
+                </div>
+
+                <div class="sb-learning-list">
+
+                    <div class="sb-learning-item sb-reveal">
+                        <span class="sb-learning-icon">
+                            <i class="fas fa-keyboard"></i>
+                        </span>
+                        <div>
+                            <h3>Computer Operations</h3>
+                            <p>
+                                Understanding computer hardware,
+                                software and basic operating procedures.
+                            </p>
+                        </div>
+                        <i class="fas fa-arrow-right sb-learning-arrow"></i>
+                    </div>
+
+                    <div class="sb-learning-item sb-reveal">
+                        <span class="sb-learning-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </span>
+                        <div>
+                            <h3>Computer Applications</h3>
+                            <p>
+                                Developing familiarity with useful
+                                computer applications and digital tools.
+                            </p>
+                        </div>
+                        <i class="fas fa-arrow-right sb-learning-arrow"></i>
+                    </div>
+
+                    <div class="sb-learning-item sb-reveal">
+                        <span class="sb-learning-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </span>
+                        <div>
+                            <h3>Responsible Technology Use</h3>
+                            <p>
+                                Promoting responsible digital practices
+                                and awareness of online environments.
+                            </p>
+                        </div>
+                        <i class="fas fa-arrow-right sb-learning-arrow"></i>
+                    </div>
+
+                    <div class="sb-learning-item sb-reveal">
+                        <span class="sb-learning-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </span>
+                        <div>
+                            <h3>Independent Learning</h3>
+                            <p>
+                                Encouraging curiosity, self-learning
+                                and confidence in exploring technology.
+                            </p>
+                        </div>
+                        <i class="fas fa-arrow-right sb-learning-arrow"></i>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- OBJECTIVES -->
+            <div class="sb-objectives sb-reveal" id="sb-objectives">
+
+                <div class="sb-objectives-header">
+                    <span class="sb-kicker">Our Commitment</span>
+
+                    <h2 class="sb-main-title">
+                        Preparing Students
+                        <span>For Tomorrow</span>
+                    </h2>
+                </div>
+
+                <div class="sb-objectives-grid">
+
+                    <div class="sb-objective">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Academic Growth</h3>
+                        <p>
+                            Supporting academic development through
+                            meaningful technology-based learning.
+                        </p>
+                    </div>
+
+                    <div class="sb-objective">
+                        <i class="fas fa-users"></i>
+                        <h3>Student Confidence</h3>
+                        <p>
+                            Helping students become confident
+                            and independent technology users.
+                        </p>
+                    </div>
+
+                    <div class="sb-objective">
+                        <i class="fas fa-rocket"></i>
+                        <h3>Future Readiness</h3>
+                        <p>
+                            Building a foundation for future
+                            academic and technological opportunities.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- CLOSING BANNER -->
+            <div class="sb-closing sb-reveal">
+                <div class="sb-closing-icon">
+                    <i class="fas fa-microchip"></i>
+                </div>
+
+                <div>
+                    <span>ALIGARH PUBLIC SCHOOL & COLLEGE</span>
+                    <h3>Learn Today. Innovate Tomorrow.</h3>
+                    <p class="mb-0">
+                        Inspiring students to explore technology,
+                        develop their abilities and embrace the
+                        opportunities of the digital future.
+                    </p>
+                </div>
+
+                <div class="sb-closing-decoration">
+                    <i class="fas fa-code"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+<!-- SENIOR Girls COMPUTER LAB END -->
+
+
+
+   
+   <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <i class="fas fa-university text-warning fs-3"></i>
+                        <h5 class="mb-0 text-white">ALIGARH PUBLIC SCHOOL</h5>
+                    </div>
+                    <p>The mission of Sir Syed Ahmad Khan, Tehzibul Akhlaq Trust was established in 1961 at Lahore by the enlightened, progressive and devoted alumni of Aligarh Muslim University and some other eminent scholars and philanthropists.</p>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="about.html">About AGPS</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="campuses.html">Campuses</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Admissions</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="Document/Admission & Withdrawal.pdf" target="_blank">Criteria & Rules</a></li>
+                        <li><a href="Document/CONCESSIONS IN TUITION FEE.pdf" target="_blank">Fee Concessions</a></li>
+                        <li><a href="apply.html">Apply Online</a></li>
+                        <li><a href="contact.html">Contact Desk</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5>Contact Info</h5>
+                    <p class="small mb-1"><i class="fas fa-map-marker-alt text-warning me-2"></i>38-47/C-2, Ghalib Road, Gulberg III, Lahore</p>
+                    <p class="small mb-1"><i class="fas fa-phone text-warning me-2"></i>042-35754957 / 35755065</p>
+                    <p class="small"><i class="fas fa-envelope text-warning me-2"></i>agps.gulberg@gmail.com</p>
+                </div>
+            </div>
+
+    <footer class="py-4 mt-5" style="border-top: 1px solid white;">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 Aligarh Public School Gulberg, Lahore. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

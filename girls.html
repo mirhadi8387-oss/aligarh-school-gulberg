@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics - Aligarh Public School</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="preloader">
+    <div class="loader-content">
+        <!-- Aapka logo -->
+        <img src="Photos/logo-small.png" alt="AGPS Logo" class="loader-logo">
+        <!-- Optional Loading Spinner Ring -->
+        <div class="loader-spinner"></div>
+    </div>
+</div>
+   <div class="top-bar py-2 d-none d-lg-block">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div>
+                <i class="fas fa-envelope me-2 text-warning"></i> agps.gulberg@gmail.com
+                <i class="fas fa-phone ms-4 me-2 text-warning"></i> +92-42-35754957 / +92-42-35755065
+                <i class="fas fa-map-marker-alt ms-4 me-2 text-warning"></i> 38-47/C-2, Ghalib Road, Gulberg III, Lahore
+                <a href="apply.html" class="btn btn-warning btn-sm fw-bold text-dark px-3" style="margin-left: 10px;">
+                    <i class="fas fa-paper-plane me-1"></i> Apply Now!
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Fixed Mobile Menu Responsive Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand navbar-brand-logo d-flex align-items-center gap-2" href="javascript:void(0)" onclick="switchTab('home')">
+                <div class="brand-icon">
+                    <img src="Photos/logo-small.png" alt="AGPS-logo" width="50" height="auto">
+                </div>
+                <div>
+                    <div class="brand-title fw-bold text-dark" style="font-size: 16px;">ALIGARH PUBLIC SCHOOL</div>
+                    <div class="brand-subtitle text-secondary" style="font-size: 13px;">& COLLEGE GULBERG LAHORE</div>
+                </div>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    
+                    <!-- Home -->
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold" href="index.html">Home</a>
+                    </li>
+
+                    <!-- About Us Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="about.html" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="background.html">Background</a></li>
+                            <li><a class="dropdown-item" href="aboutTAT.html">About TAT</a></li>
+                            <li><a class="dropdown-item" href="history.html">History</a></li>
+                            <li><a class="dropdown-item" href="president.html">President Message</a></li>
+                            <li><a class="dropdown-item" href="principal.html">Principal Message</a></li>
+                            <li><a class="dropdown-item" href="mission.html">Mission Statement</a></li>
+                            <li><a class="dropdown-item" href="objective.html">Objectives</a></li>
+                            <li><a class="dropdown-item" href="faculty.html">Faculty & Administration</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Academics Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="academics.html" id="academicsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Academics
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="academicsDropdown">
+                            <li><a class="dropdown-item" href="girls.html">Girls Branch</a></li>
+                            <li><a class="dropdown-item" href="boys.html">Boys Branch</a></li>
+                            <li><a class="dropdown-item" href="college.html">College for Women</a></li>
+                            <li><a class="dropdown-item" href="rules.html">Rules & Regulation</a></li>
+                            <li><a class="dropdown-item" href="assessment.html">Learning Assessment</a></li>
+                            <li><a class="dropdown-item" href="comEdu.html">Computer Education</a></li>
+                            <li><a class="dropdown-item" href="parent.html">Parent Teacher Meeting</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Admissions Dropdown (Replaced Campuses) -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="admissions.html" id="admissionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Admissions
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="admissionsDropdown">
+                            <li><a class="dropdown-item" href="admissionProcess.html">Admission Process</a></li>
+                            <li><a class="dropdown-item" href="feeStructure.html">Fee Structure</a></li>
+                            <li><a class="dropdown-item" href="scholarshipFee.html">Scholarship / Fee Concession</a></li>
+                            <li><a class="dropdown-item" href="admissions.html#book-list">Book List</a></li>
+                            <li><a class="dropdown-item" href="withdrawal.html">Withdrawal Process</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Alumni Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="alumni.html" id="alumniDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Alumni
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="alumniDropdown">
+                            <li><a class="dropdown-item" href="testimonial.html">Testimonials</a></li>
+                            <li><a class="dropdown-item" href="feedback.html">Feedback</a></li>
+                        </ul>
+                    </li>
+
+<!-- Facilities Dropdown -->
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle fw-semibold" href="facilities.html" id="facilitiesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Facilities
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="facilitiesDropdown">
+        
+        <!-- Computer Lab (Hover hone par aage list open hogi) -->
+        <li class="dropdown-submenu">
+            <a class="dropdown-item" href="facilities.html#computer-labs">Computer Lab</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="junior.html">Junior Computer Lab</a></li>
+                <li><a class="dropdown-item" href="senior-girls-lab.html">Sr. Girls Lab</a></li>
+                <li><a class="dropdown-item" href="sr-boys-lab.html">Sr. Boys Branch Lab</a></li>
+            </ul>
+        </li>
+
+        <!-- Baaki Facilities Items -->
+        <li><a class="dropdown-item" href="chemistry.html">Chemistry Lab</a></li>
+        <li><a class="dropdown-item" href="physics.html">Physics Lab</a></li>
+        <li><a class="dropdown-item" href="biology.html">Bio Lab</a></li>
+    </ul>
+</li>
+
+                    <!-- Events & News Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="events.html" id="eventsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Events & News
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="eventsDropdown">
+                            <li><a class="dropdown-item" href="events.html#announcements">Announcements</a></li>
+                            <li><a class="dropdown-item" href="events.html#upcoming">Upcoming Events</a></li>
+                            <li><a class="dropdown-item" href="gallery-details.html">Gallery</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Contact Us -->
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+  
+<!-- GIRLS BRANCH SECTION -->
+<section id="girls-branch" class="girls-branch-section">
+    <div class="container">
+
+        <!-- Section Heading -->
+        <div class="girls-section-heading">
+            <span class="girls-section-eyebrow">ACADEMIC EXCELLENCE</span>
+            <h2>Our <span>Girls Branch</span></h2>
+            <p>Comprehensive Education from Pre-Nursery to Matriculation</p>
+            <div class="girls-heading-line"></div>
+        </div>
+
+        <!-- Hero Image Banner -->
+        <div class="girls-hero-banner">
+            <img
+                src="Photos/girl result.jpeg"
+                alt="Aligarh Public School Girls Branch"
+                class="girls-hero-image"
+            >
+
+            <div class="girls-hero-overlay">
+                <span class="girls-hero-badge">
+                    <i class="fas fa-award"></i> Academic Achievement
+                </span>
+                <h3>Girls Branch Matric Students</h3>
+                <p>Learning Today, Leading Tomorrow</p>
+            </div>
+        </div>
+
+        <!-- Introduction -->
+        <div class="girls-intro-box">
+            <div class="girls-intro-icon">
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+
+            <div class="girls-intro-content">
+                <span class="girls-card-label">OUR ACADEMIC APPROACH</span>
+                <h3>Education for Every Stage of Growth</h3>
+                <p>
+                    <strong>Aligarh Public School</strong> is proud to offer
+                    seamless, high-quality education from
+                    <strong>Pre-Nursery to Matriculation.</strong>
+                    Our academic structure is divided into specialized wings
+                    to ensure focused development at every age.
+                </p>
+            </div>
+        </div>
+
+        <!-- Academic Wings -->
+        <div class="girls-wings-heading">
+            <span>OUR ACADEMIC WINGS</span>
+            <h3>Learning Pathways</h3>
+            <p>Building strong foundations and preparing students for the future.</p>
+        </div>
+
+        <div class="row g-4 girls-wings-grid">
+
+            <!-- Kindergarten Wing -->
+            <div class="col-lg-4 col-md-6">
+                <article class="girls-wing-card">
+                    <div class="girls-wing-accent accent-gold"></div>
+
+                    <div class="girls-wing-card-body">
+                        <div class="girls-wing-top">
+                            <div class="girls-wing-icon icon-gold">
+                                <i class="fas fa-shapes"></i>
+                            </div>
+                            <span class="girls-wing-number">01</span>
+                        </div>
+
+                        <span class="girls-wing-tag tag-gold">
+                            Play Group – K.G.
+                        </span>
+
+                        <h4>Kindergarten Wing</h4>
+
+                        <p class="girls-wing-description">
+                            Focuses on developing foundational skills through
+                            structured, interactive activities. Children are
+                            given opportunities to grow socially, physically,
+                            emotionally, and intellectually.
+                        </p>
+
+                        <div class="girls-wing-focus">
+                            <h5><i class="fas fa-star"></i> Key Focus Areas</h5>
+                            <ul>
+                                <li>Communication &amp; interpersonal skills</li>
+                                <li>Early problem-solving development</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Junior Wing -->
+            <div class="col-lg-4 col-md-6">
+                <article class="girls-wing-card">
+                    <div class="girls-wing-accent accent-green"></div>
+
+                    <div class="girls-wing-card-body">
+                        <div class="girls-wing-top">
+                            <div class="girls-wing-icon icon-green">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                            <span class="girls-wing-number">02</span>
+                        </div>
+
+                        <span class="girls-wing-tag tag-green">
+                            Classes I – IV
+                        </span>
+
+                        <h4>Junior Wing</h4>
+
+                        <p class="girls-wing-description">
+                            Emphasis is laid on applying knowledge in real
+                            circumstances. Students learn to interpret
+                            information, understand different scenarios,
+                            and formulate practical solutions.
+                        </p>
+
+                        <div class="girls-wing-focus">
+                            <h5><i class="fas fa-star"></i> Core Methodology</h5>
+                            <ul>
+                                <li>Conceptual clarity</li>
+                                <li>Practical knowledge application</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Senior Wing Girls -->
+            <div class="col-lg-4 col-md-6">
+                <article class="girls-wing-card">
+                    <div class="girls-wing-accent accent-dark"></div>
+
+                    <div class="girls-wing-card-body">
+                        <div class="girls-wing-top">
+                            <div class="girls-wing-icon icon-dark">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                            <span class="girls-wing-number">03</span>
+                        </div>
+
+                        <span class="girls-wing-tag tag-dark">
+                            Classes V – X
+                        </span>
+
+                        <h4>Senior Wing Girls</h4>
+
+                        <p class="girls-wing-description">
+                            Located on a dedicated separate campus. The
+                            curriculum focuses on analytical and critical
+                            thinking skills, empowering students to develop
+                            plans and solve advanced problems.
+                        </p>
+
+                        <div class="girls-wing-focus">
+                            <h5><i class="fas fa-star"></i> Key Focus Areas</h5>
+                            <ul>
+                                <li>Analytical reasoning</li>
+                                <li>Creative problem-solving and leadership</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+
+        <!-- Closing Message -->
+        <div class="girls-branch-footer">
+            <div class="girls-footer-icon">
+                <i class="fas fa-lightbulb"></i>
+            </div>
+            <div>
+                <h4>Inspiring Excellence at Every Stage</h4>
+                <p>
+                    Nurturing knowledge, confidence, character, and lifelong
+                    learning through quality education.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+   <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <i class="fas fa-university text-warning fs-3"></i>
+                        <h5 class="mb-0 text-white">ALIGARH PUBLIC SCHOOL</h5>
+                    </div>
+                    <p>The mission of Sir Syed Ahmad Khan, Tehzibul Akhlaq Trust was established in 1961 at Lahore by the enlightened, progressive and devoted alumni of Aligarh Muslim University and some other eminent scholars and philanthropists.</p>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="about.html">About AGPS</a></li>
+                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="campuses.html">Campuses</a></li>
+                        <li><a href="facilities.html">Facilities</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Admissions</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small">
+                        <li><a href="Document/Admission & Withdrawal.pdf" target="_blank">Criteria & Rules</a></li>
+                        <li><a href="Document/CONCESSIONS IN TUITION FEE.pdf" target="_blank">Fee Concessions</a></li>
+                        <li><a href="apply.html">Apply Online</a></li>
+                        <li><a href="contact.html">Contact Desk</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5>Contact Info</h5>
+                    <p class="small mb-1"><i class="fas fa-map-marker-alt text-warning me-2"></i>38-47/C-2, Ghalib Road, Gulberg III, Lahore</p>
+                    <p class="small mb-1"><i class="fas fa-phone text-warning me-2"></i>042-35754957 / 35755065</p>
+                    <p class="small"><i class="fas fa-envelope text-warning me-2"></i>agps.gulberg@gmail.com</p>
+                </div>
+            </div>
+
+    <footer class="py-4 mt-5" style="border-top: 1px solid white;">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 Aligarh Public School Gulberg, Lahore. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
